@@ -255,5 +255,10 @@ fixtures = [
         "doctype": "Work Site", 
         "filters": [],
         "overwrite": 1
-    }  # empty filter = export all
+    },  # empty filter = export all
+    {
+        "doctype" : "Workflow",
+        "overwrite": 1,
+        "filters" : [["name", "=", "RRCL Purchase Requisition"]]
+    }
 ]
