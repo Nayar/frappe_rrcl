@@ -1,0 +1,22 @@
+[
+ {
+  "amended_from": null,
+  "docstatus": 0,
+  "doctype": "Work Site",
+  "geolocation_azdf": null,
+  "modified": "2025-11-18 17:39:19.622124",
+  "name": "Anahita",
+  "site_name": "Anahita",
+  "warehouse": null
+ },
+ {
+  "amended_from": null,
+  "docstatus": 0,
+  "doctype": "Work Site",
+  "geolocation_azdf": null,
+  "modified": "2025-11-18 17:39:32.977177",
+  "name": "Black River M86",
+  "site_name": "Black River M86",
+  "warehouse": null
+ }
+]

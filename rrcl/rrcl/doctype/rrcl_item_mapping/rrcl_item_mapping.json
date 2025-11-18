@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-13 08:18:14.461676",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "gl_account",
+  "gl_acc_desc",
+  "gl_desc",
+  "category"
+ ],
+ "fields": [
+  {
+   "fieldname": "gl_account",
+   "fieldtype": "Data",
+   "label": "GL Account"
+  },
+  {
+   "fieldname": "gl_acc_desc",
+   "fieldtype": "Data",
+   "label": "GL Acc and Desc"
+  },
+  {
+   "fieldname": "gl_desc",
+   "fieldtype": "Data",
+   "label": "GL Desc"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "label": "Category"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-13 08:23:14.469193",
+ "modified_by": "Administrator",
+ "module": "RRCL",
+ "name": "RRCL Item Mapping",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
