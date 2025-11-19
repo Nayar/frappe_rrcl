@@ -2,6 +2,15 @@
  {
   "docstatus": 0,
   "doctype": "Workflow State",
+  "icon": "remove",
+  "modified": "2025-11-18 18:19:46.761357",
+  "name": "Rejected",
+  "style": "Danger",
+  "workflow_state_name": "Rejected"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
   "icon": "question-sign",
   "modified": "2025-11-18 18:19:46.759944",
   "name": "Pending",
@@ -20,11 +29,20 @@
  {
   "docstatus": 0,
   "doctype": "Workflow State",
-  "icon": "remove",
-  "modified": "2025-11-18 18:19:46.761357",
-  "name": "Rejected",
-  "style": "Danger",
-  "workflow_state_name": "Rejected"
+  "icon": "",
+  "modified": "2025-11-18 21:37:57.003780",
+  "name": "Needs Site Manager Approval",
+  "style": "",
+  "workflow_state_name": "Needs Site Manager Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-11-19 09:36:17.772827",
+  "name": "Needs Store Manager Approval",
+  "style": "",
+  "workflow_state_name": "Needs Store Manager Approval"
  },
  {
   "docstatus": 0,
@@ -34,14 +52,5 @@
   "name": "Draft",
   "style": "",
   "workflow_state_name": "Draft"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
-  "modified": "2025-11-18 21:37:57.003780",
-  "name": "Needs Site Manager Approval",
-  "style": "",
-  "workflow_state_name": "Needs Site Manager Approval"
  }
 ]

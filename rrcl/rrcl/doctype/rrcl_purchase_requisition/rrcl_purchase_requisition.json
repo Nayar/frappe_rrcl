@@ -10,7 +10,6 @@
   "date",
   "column_break_xpwj",
   "work_site",
-  "workflow_state",
   "section_break_yvoj",
   "table_vqjn",
   "section_break_ksms",
@@ -85,20 +84,13 @@
   {
    "fieldname": "column_break_xpwj",
    "fieldtype": "Column Break"
-  },
-  {
-   "allow_on_submit": 1,
-   "fieldname": "workflow_state",
-   "fieldtype": "Data",
-   "label": "Workflow State",
-   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "is_calendar_and_gantt": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-11-15 00:06:10.609946",
+ "modified": "2025-11-19 11:43:13.352395",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Purchase Requisition",
@@ -116,6 +108,18 @@
    "role": "System Manager",
    "share": 1,
    "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "RRCL Store Manager",
+   "share": 1,
    "write": 1
   }
  ],
