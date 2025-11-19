@@ -265,5 +265,18 @@ fixtures = [
         "doctype": "Workflow State", 
         "filters": [],
         "overwrite": 1
+    },
+    {
+        "doctype": "Role", 
+        "filters": {
+            "name": ["like", "RRCL%"]
+        },
+        "overwrite": 1
+    },
+    {
+        "doctype": "Custom DocPerm",
+        "filters": {
+            "role": ["like", "RRCL%"]
+        }
     }
 ]
