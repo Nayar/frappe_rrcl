@@ -5,7 +5,7 @@
   "document_type": "RRCL Purchase Requisition",
   "enable_action_confirmation": 1,
   "is_active": 1,
-  "modified": "2025-11-19 11:58:13.471725",
+  "modified": "2025-11-19 15:35:24.657548",
   "name": "RRCL Purchase Requisition",
   "override_status": 0,
   "send_email_alert": 0,
@@ -61,6 +61,19 @@
     "update_field": null,
     "update_value": null,
     "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "System Manager",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Completed",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
    }
   ],
   "transitions": [
@@ -94,6 +107,17 @@
     "next_state": "Approved",
     "send_email_to_creator": 0,
     "state": "Needs Site Manager Approval",
+    "transition_tasks": null,
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Close",
+    "allow_self_approval": 1,
+    "allowed": "RRCL Store Manager",
+    "condition": null,
+    "next_state": "Completed",
+    "send_email_to_creator": 0,
+    "state": "Approved",
     "transition_tasks": null,
     "workflow_builder_id": null
    }
