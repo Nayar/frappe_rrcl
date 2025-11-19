@@ -277,5 +277,10 @@ fixtures = [
         "doctype": "Custom DocPerm",
         "filters": {
         }
+    },
+    { 
+        "doctype": "Client Script", 
+        "filters" : [[ "module", "=",  'rrcl'  ]],
+        "overwrite": 1,
     }
 ]
