@@ -252,7 +252,7 @@ app_license = "agpl-3.0"
 
 fixtures = [
     {
-        "doctype": "Work Site", 
+        "doctype": "RRCL Work Site", 
         "filters": [],
         "overwrite": 1
     },  # empty filter = export all
