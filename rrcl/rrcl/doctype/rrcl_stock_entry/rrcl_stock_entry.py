@@ -33,11 +33,12 @@ class RRCLStockEntry(Document):
         print("loop 2")
         if(row_pr.item == row_se.item):
           pr_item = frappe.get_doc("RRCL Purchase Requisition Item",row_pr.name)
-          pr_item.db_set("delivered", (pr_item.delivered or 0) + row_se.qty)
-          pr_item.db_set("fulfilled", pr_item.qty <= ((pr_item.delivered or 0) + row_se.qty))
+          total_delivered = (pr_item.delivered or 0) + row_se.qty
+          pr_item.db_set("delivered", total_delivered)
+          pr_item.db_set("fulfilled", pr_item.qty <= total_delivered)
           frappe.get_doc("RRCL Purchase Requisition", pr_item.parent).add_comment(
               "Info",
-              f"Delivered qty for item {row_se.item} updated to {(pr_item.delivered or 0) + row_se.qty} "
+              f"Delivered qty for item {row_se.item} updated to {total_delivered}"
               f"by Stock Entry {self.name}."
           )
           # pr_item.delivered = (pr_item.delivered or 0) + row_se.qty
