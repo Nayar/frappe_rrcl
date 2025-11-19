@@ -276,7 +276,6 @@ fixtures = [
     {
         "doctype": "Custom DocPerm",
         "filters": {
-            "parent": ["like", "RRCL%"]
         }
     }
 ]
