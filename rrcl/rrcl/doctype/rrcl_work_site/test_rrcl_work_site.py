@@ -13,9 +13,9 @@ IGNORE_TEST_RECORD_DEPENDENCIES = []  # eg. ["User"]
 
 
 
-class IntegrationTestWorkSite(IntegrationTestCase):
+class IntegrationTestRRCLWorkSite(IntegrationTestCase):
 	"""
-	Integration tests for WorkSite.
+	Integration tests for RRCLWorkSite.
 	Use this class for testing interactions between multiple components.
 	"""
 

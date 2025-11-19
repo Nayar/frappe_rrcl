@@ -78,7 +78,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Work Site",
-   "options": "Work Site",
+   "options": "RRCL Work Site",
    "reqd": 1
   },
   {
@@ -90,7 +90,7 @@
  "is_calendar_and_gantt": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-11-19 11:43:13.352395",
+ "modified": "2025-11-19 12:16:25.080033",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Purchase Requisition",
