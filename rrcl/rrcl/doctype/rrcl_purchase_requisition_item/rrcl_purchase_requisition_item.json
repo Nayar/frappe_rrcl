@@ -64,7 +64,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Construction Phase",
-   "options": "RRCL Construction Phase"
+   "options": "RRCL Construction Phase",
+   "reqd": 1
   },
   {
    "default": "1",
@@ -81,7 +82,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-11-21 14:34:58.224491",
+ "modified": "2025-11-21 14:51:09.284290",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Purchase Requisition Item",
