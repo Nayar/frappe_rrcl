@@ -39,7 +39,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Documents",
-   "link_count": 1,
+   "link_count": 4,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -53,9 +53,39 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "RRCL Stock Entry",
+   "link_count": 0,
+   "link_to": "RRCL Stock Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "RRCL Work Site",
+   "link_count": 0,
+   "link_to": "RRCL Work Site",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "RRCL Item",
+   "link_count": 0,
+   "link_to": "RRCL Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-11-21 13:41:13.534990",
+ "modified": "2025-11-21 13:44:00.748625",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL",
