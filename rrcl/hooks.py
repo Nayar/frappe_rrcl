@@ -16,7 +16,7 @@ app_license = "agpl-3.0"
 # 		"name": "rrcl",
 # 		"logo": "/assets/rrcl/logo.png",
 # 		"title": "RRCL",
-# 		"route": "/rrcl",
+# 		"route": "/rrcl"
 # 		"has_permission": "rrcl.api.permission.has_app_permission"
 # 	}
 # ]
