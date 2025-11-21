@@ -12,6 +12,7 @@
   "work_site",
   "section_break_fmkc",
   "scan_barcode",
+  "add_to_table",
   "section_break_yvoj",
   "table_vqjn",
   "section_break_ksms",
@@ -96,13 +97,18 @@
    "fieldtype": "Data",
    "label": "Scan Barcode",
    "options": "Barcode"
+  },
+  {
+   "fieldname": "add_to_table",
+   "fieldtype": "Button",
+   "label": "Add to Table"
   }
  ],
  "grid_page_length": 50,
  "is_calendar_and_gantt": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-11-21 16:25:28.424270",
+ "modified": "2025-11-21 16:55:30.752156",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Purchase Requisition",
