@@ -10,7 +10,11 @@
   "site_name",
   "amended_from",
   "warehouse",
-  "geolocation_azdf"
+  "geolocation_azdf",
+  "section_break_cqhz",
+  "site_manager",
+  "store_manager",
+  "default_procurement_officer"
  ],
  "fields": [
   {
@@ -22,7 +26,7 @@
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "Work Site",
+   "options": "RRCL Work Site",
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
@@ -45,12 +49,37 @@
   {
    "fieldname": "geolocation_azdf",
    "fieldtype": "Geolocation"
+  },
+  {
+   "fieldname": "section_break_cqhz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "site_manager",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Site Manager",
+   "options": "User"
+  },
+  {
+   "fieldname": "store_manager",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Store Manager",
+   "options": "User"
+  },
+  {
+   "fieldname": "default_procurement_officer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Default Procurement Officer",
+   "options": "User"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-13 10:56:41.203975",
+ "modified": "2025-11-21 14:31:27.617069",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Work Site",

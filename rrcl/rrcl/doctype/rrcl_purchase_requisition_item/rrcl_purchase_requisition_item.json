@@ -8,7 +8,9 @@
  "engine": "InnoDB",
  "field_order": [
   "item",
+  "unit",
   "qty",
+  "construction_phase",
   "work_description",
   "delivered",
   "fulfilled"
@@ -55,13 +57,31 @@
    "in_standard_filter": 1,
    "label": "Fullfilled",
    "read_only": 1
+  },
+  {
+   "fieldname": "construction_phase",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Construction Phase",
+   "options": "RRCL Construction Phase"
+  },
+  {
+   "default": "1",
+   "fieldname": "unit",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Unit",
+   "length": 4,
+   "options": "1\npallet",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-11-13 16:39:09.313881",
+ "modified": "2025-11-21 14:34:58.224491",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Purchase Requisition Item",
