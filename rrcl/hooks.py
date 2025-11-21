@@ -282,5 +282,10 @@ fixtures = [
         "doctype": "Client Script", 
         "filters" : [[ "module", "=",  'rrcl'  ]],
         "overwrite": 1,
-    }
+    },
+    {
+        "doctype": "RRCL Construction Phase", 
+        "filters": [],
+        "overwrite": 1
+    },
 ]
