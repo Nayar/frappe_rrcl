@@ -102,7 +102,7 @@
  "is_calendar_and_gantt": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-11-24 10:47:12.353577",
+ "modified": "2025-11-24 23:44:57.809806",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Purchase Requisition",
@@ -139,16 +139,7 @@
  "rows_threshold_for_grid_search": 20,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": [
-  {
-   "color": "Yellow",
-   "title": "Partially Delivered"
-  },
-  {
-   "color": "Green",
-   "title": "Delivered"
-  }
- ],
+ "states": [],
  "track_changes": 1,
  "track_seen": 1
 }

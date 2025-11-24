@@ -17,7 +17,8 @@
   "attendance_type",
   "section_break_bwhq",
   "date_joined",
-  "date_left"
+  "date_left",
+  "department"
  ],
  "fields": [
   {
@@ -95,12 +96,17 @@
    "fieldtype": "Select",
    "label": "Attendance Type",
    "options": "Digital\nManual\nAssumed"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-24 23:20:00.428134",
+ "modified": "2025-11-24 23:35:38.453557",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Employee",
