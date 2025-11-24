@@ -1,4 +1,22 @@
 frappe.ui.form.on("RRCL Purchase Requisition", {
+  setup: async function(frm) {
+        // get employee linked to current user
+        const r = await frappe.db.get_value(
+            "RRCL Employee",
+            { user: frappe.session.user },
+            "name"
+        );
+
+        const employee = r?.message?.name;
+
+        frm.set_query("work_site", () => {
+            return {
+                filters: {
+                    store_manager: employee
+                }
+            };
+        });
+    },
   scan_barcode: function(frm) {
     const barcode = frm.doc.scan_barcode;
     if (!barcode) {

@@ -15,6 +15,7 @@
   "last_name",
   "active",
   "phone",
+  "user",
   "column_break_bzmy",
   "full_name",
   "nationality",
@@ -122,12 +123,18 @@
    "fieldname": "phone",
    "fieldtype": "Phone",
    "label": "Phone"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-25 01:27:56.719827",
+ "modified": "2025-11-25 01:52:37.912700",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Employee",
