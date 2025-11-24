@@ -1,20 +1,20 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-11-13 08:25:52.116576",
+ "creation": "2025-11-24 14:42:08.285912",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_tdyz",
+  "section_break_ij8a",
   "lft",
   "rgt",
   "is_group",
-  "parent_rrcl_item_category",
-  "name1"
+  "old_parent",
+  "parent_rrcl_item_category"
  ],
  "fields": [
   {
-   "fieldname": "section_break_tdyz",
+   "fieldname": "section_break_ij8a",
    "fieldtype": "Section Break"
   },
   {
@@ -34,10 +34,15 @@
    "read_only": 1
   },
   {
-   "default": "0",
    "fieldname": "is_group",
    "fieldtype": "Check",
    "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "RRCL Item Category"
   },
   {
    "fieldname": "parent_rrcl_item_category",
@@ -45,18 +50,13 @@
    "ignore_user_permissions": 1,
    "label": "Parent RRCL Item Category",
    "options": "RRCL Item Category"
-  },
-  {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "label": "Name"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_tree": 1,
  "links": [],
- "modified": "2025-11-13 08:28:28.886371",
+ "modified": "2025-11-24 14:42:08.285912",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Item Category",
@@ -80,6 +80,5 @@
  "rows_threshold_for_grid_search": 20,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": [],
- "title_field": "name1"
+ "states": []
 }

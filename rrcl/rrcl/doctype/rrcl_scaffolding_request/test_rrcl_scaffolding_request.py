@@ -13,9 +13,9 @@ IGNORE_TEST_RECORD_DEPENDENCIES = []  # eg. ["User"]
 
 
 
-class IntegrationTestRRCLItemCategory(IntegrationTestCase):
+class IntegrationTestRRCLScaffoldingRequest(IntegrationTestCase):
 	"""
-	Integration tests for RRCLItemCategory.
+	Integration tests for RRCLScaffoldingRequest.
 	Use this class for testing interactions between multiple components.
 	"""
 

@@ -11,7 +11,8 @@
   "standard_name",
   "rrcl_name",
   "barcode",
-  "allow_in_purchase_requisition"
+  "allow_in_purchase_requisition",
+  "daily_rate"
  ],
  "fields": [
   {
@@ -48,12 +49,17 @@
    "fieldname": "allow_in_purchase_requisition",
    "fieldtype": "Check",
    "label": "Allow in Purchase Requisition"
+  },
+  {
+   "fieldname": "daily_rate",
+   "fieldtype": "Data",
+   "label": "Daily Rate"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-21 17:07:44.970834",
+ "modified": "2025-11-24 14:27:06.314820",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Item",

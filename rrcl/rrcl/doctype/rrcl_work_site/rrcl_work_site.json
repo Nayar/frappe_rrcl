@@ -59,7 +59,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Site Manager",
-   "options": "User"
+   "options": "RRCL Employee"
   },
   {
    "fieldname": "store_manager",
@@ -79,7 +79,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-21 14:31:27.617069",
+ "modified": "2025-11-24 17:24:50.782680",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Work Site",

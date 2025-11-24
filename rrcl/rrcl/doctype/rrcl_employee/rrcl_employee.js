@@ -1,7 +1,7 @@
 // Copyright (c) 2025, LEFINTECH LTD and contributors
 // For license information, please see license.txt
 
-// frappe.ui.form.on("RRCL Item Category", {
+// frappe.ui.form.on("RRCL Employee", {
 // 	refresh(frm) {
 
 // 	},

@@ -39,7 +39,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Documents",
-   "link_count": 4,
+   "link_count": 5,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -83,9 +83,19 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "RRCL Item Category",
+   "link_count": 0,
+   "link_to": "RRCL Item Category",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-11-21 13:44:00.748625",
+ "modified": "2025-11-24 14:40:04.152362",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL",

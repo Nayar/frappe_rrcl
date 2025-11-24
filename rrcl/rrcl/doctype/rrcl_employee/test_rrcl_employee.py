@@ -13,9 +13,9 @@ IGNORE_TEST_RECORD_DEPENDENCIES = []  # eg. ["User"]
 
 
 
-class IntegrationTestRRCLItemCategory(IntegrationTestCase):
+class IntegrationTestRRCLEmployee(IntegrationTestCase):
 	"""
-	Integration tests for RRCLItemCategory.
+	Integration tests for RRCLEmployee.
 	Use this class for testing interactions between multiple components.
 	"""
 
