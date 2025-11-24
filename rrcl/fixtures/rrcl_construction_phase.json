@@ -1,0 +1,34 @@
+[
+ {
+  "code": "PH3",
+  "description": "PH3- Earthworks",
+  "docstatus": 0,
+  "doctype": "RRCL Construction Phase",
+  "modified": "2025-11-21 15:27:04.205345",
+  "name": "PH3"
+ },
+ {
+  "code": "PH4",
+  "description": "Substructure",
+  "docstatus": 0,
+  "doctype": "RRCL Construction Phase",
+  "modified": "2025-11-21 15:27:24.386802",
+  "name": "PH4"
+ },
+ {
+  "code": "PH1",
+  "description": "PH1 - Pre Construction",
+  "docstatus": 0,
+  "doctype": "RRCL Construction Phase",
+  "modified": "2025-11-21 14:17:54.977497",
+  "name": "PH1"
+ },
+ {
+  "code": "PH2",
+  "description": "PH2 - Site Establishment",
+  "docstatus": 0,
+  "doctype": "RRCL Construction Phase",
+  "modified": "2025-11-21 14:17:43.271750",
+  "name": "PH2"
+ }
+]
