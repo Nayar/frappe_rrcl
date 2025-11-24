@@ -10,8 +10,13 @@
   "employee_code",
   "first_name",
   "last_name",
+  "active",
   "column_break_bzmy",
-  "full_name"
+  "full_name",
+  "nationality",
+  "section_break_bwhq",
+  "date_joined",
+  "date_left"
  ],
  "fields": [
   {
@@ -55,12 +60,38 @@
    "fieldtype": "Data",
    "label": "Full Name",
    "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "fieldname": "section_break_bwhq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "date_joined",
+   "fieldtype": "Date",
+   "label": "Date Joined"
+  },
+  {
+   "fieldname": "date_left",
+   "fieldtype": "Date",
+   "label": "Date Left"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Select",
+   "label": "Nationality",
+   "options": "Mauritian\nIndian\nNepalese\nBangladeshi"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-24 17:29:51.143184",
+ "modified": "2025-11-24 23:15:58.658230",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Employee",
