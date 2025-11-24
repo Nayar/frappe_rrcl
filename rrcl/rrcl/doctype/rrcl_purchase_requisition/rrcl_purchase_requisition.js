@@ -28,11 +28,6 @@ frappe.ui.form.on("RRCL Purchase Requisition", {
         // Refresh the table field so the new row shows
         frm.refresh_field("table_vqjn");
 
-        // Use a delay to ensure grid is rendered before opening
-        setTimeout(() => {
-          frm.get_field("table_vqjn").grid.open_grid_row(row.name);
-        }, 100);  // 100 ms delay
-
         // Or, more “Frappe-idiomatic”: open after AJAX
         frappe.after_ajax(() => {
             const grid = frm.get_field("table_vqjn").grid;
