@@ -1,8 +1,8 @@
 {
  "app": "rrcl",
  "charts": [],
- "content": "[{\"id\":\"NarOcOdZXf\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">RRCL</span>\",\"col\":12}},{\"id\":\"CQx3OLGXon\",\"type\":\"card\",\"data\":{\"card_name\":\"Documents\",\"col\":4}},{\"id\":\"DdaJjUnQ0z\",\"type\":\"card\",\"data\":{\"card_name\":\"HR\",\"col\":4}}]",
- "creation": "2025-11-19 11:25:43.298886",
+ "content": "[{\"id\":\"SbLdilW2pn\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">RRCL</span>\",\"col\":12}},{\"id\":\"k_0qSVEZjR\",\"type\":\"card\",\"data\":{\"card_name\":\"Setup\",\"col\":4}}]",
+ "creation": "2025-11-24 23:58:44.822764",
  "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
@@ -18,86 +18,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "RRCL Purchase Requisition",
-   "link_count": 0,
-   "link_to": "RRCL Purchase Requisition",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "RRCL Stock Entry",
-   "link_count": 0,
-   "link_to": "RRCL Stock Entry",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Documents",
-   "link_count": 5,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "RRCL Purchase Requisition",
-   "link_count": 0,
-   "link_to": "RRCL Purchase Requisition",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "RRCL Stock Entry",
-   "link_count": 0,
-   "link_to": "RRCL Stock Entry",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "RRCL Work Site",
-   "link_count": 0,
-   "link_to": "RRCL Work Site",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "RRCL Item",
-   "link_count": 0,
-   "link_to": "RRCL Item",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "RRCL Item Category",
-   "link_count": 0,
-   "link_to": "RRCL Item Category",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "HR",
+   "label": "Setup",
    "link_count": 1,
    "link_type": "DocType",
    "onboard": 0,
@@ -114,7 +35,7 @@
    "type": "Link"
   }
  ],
- "modified": "2025-11-24 23:35:01.051871",
+ "modified": "2025-11-25 00:03:33.721004",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL",
@@ -123,14 +44,7 @@
  "parent_page": "",
  "public": 1,
  "quick_lists": [],
- "roles": [
-  {
-   "role": "All"
-  },
-  {
-   "role": "System Manager"
-  }
- ],
+ "roles": [],
  "sequence_id": 28.0,
  "shortcuts": [],
  "title": "RRCL",
