@@ -14,6 +14,7 @@
   "column_break_bzmy",
   "full_name",
   "nationality",
+  "attendance_type",
   "section_break_bwhq",
   "date_joined",
   "date_left"
@@ -62,7 +63,7 @@
    "read_only": 1
   },
   {
-   "default": "0",
+   "default": "1",
    "fieldname": "active",
    "fieldtype": "Check",
    "label": "Active"
@@ -82,16 +83,24 @@
    "label": "Date Left"
   },
   {
+   "default": "Mauritian",
    "fieldname": "nationality",
    "fieldtype": "Select",
    "label": "Nationality",
    "options": "Mauritian\nIndian\nNepalese\nBangladeshi"
+  },
+  {
+   "default": "Digital",
+   "fieldname": "attendance_type",
+   "fieldtype": "Select",
+   "label": "Attendance Type",
+   "options": "Digital\nManual\nAssumed"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-24 23:15:58.658230",
+ "modified": "2025-11-24 23:20:00.428134",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Employee",
