@@ -54,7 +54,7 @@
    "type": "Link"
   }
  ],
- "modified": "2025-11-25 00:04:39.443936",
+ "modified": "2025-11-25 01:03:52.238738",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL",
@@ -63,7 +63,11 @@
  "parent_page": "",
  "public": 1,
  "quick_lists": [],
- "roles": [],
+ "roles": [
+  {
+   "role": "All"
+  }
+ ],
  "sequence_id": 28.0,
  "shortcuts": [],
  "title": "RRCL",

@@ -66,20 +66,20 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Store Manager",
-   "options": "User"
+   "options": "RRCL Employee"
   },
   {
    "fieldname": "default_procurement_officer",
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Default Procurement Officer",
-   "options": "User"
+   "options": "RRCL Employee"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-24 17:24:50.782680",
+ "modified": "2025-11-25 01:26:23.507775",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Work Site",
@@ -105,5 +105,6 @@
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": [],
- "title_field": "site_name"
+ "title_field": "site_name",
+ "track_changes": 1
 }

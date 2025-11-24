@@ -1,8 +1,11 @@
 {
  "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
  "autoname": "field:employee_code",
  "creation": "2025-11-24 16:55:11.140770",
  "doctype": "DocType",
+ "document_type": "Setup",
  "engine": "InnoDB",
  "field_order": [
   "section_break_iwqb",
@@ -11,10 +14,13 @@
   "first_name",
   "last_name",
   "active",
+  "phone",
   "column_break_bzmy",
   "full_name",
   "nationality",
   "attendance_type",
+  "job_title",
+  "date_of_birth",
   "section_break_bwhq",
   "date_joined",
   "date_left",
@@ -101,12 +107,27 @@
    "fieldname": "department",
    "fieldtype": "Data",
    "label": "Department"
+  },
+  {
+   "fieldname": "job_title",
+   "fieldtype": "Data",
+   "label": "Job Title"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "label": "Phone"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-24 23:35:38.453557",
+ "modified": "2025-11-25 01:27:56.719827",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Employee",
@@ -128,6 +149,7 @@
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": [],

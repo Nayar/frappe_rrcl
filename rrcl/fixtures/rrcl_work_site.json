@@ -27,15 +27,15 @@
  },
  {
   "amended_from": null,
-  "default_procurement_officer": null,
+  "default_procurement_officer": "",
   "docstatus": 0,
   "doctype": "RRCL Work Site",
   "geolocation_azdf": null,
-  "modified": "2025-11-19 15:06:22.402842",
+  "modified": "2025-11-25 01:27:15.965542",
   "name": "Valriche V201",
-  "site_manager": null,
+  "site_manager": "A783",
   "site_name": "Valriche V201",
-  "store_manager": null,
+  "store_manager": "",
   "warehouse": null
  },
  {
@@ -44,11 +44,11 @@
   "docstatus": 0,
   "doctype": "RRCL Work Site",
   "geolocation_azdf": null,
-  "modified": "2025-11-21 14:10:11.755707",
+  "modified": "2025-11-25 01:26:59.883319",
   "name": "The Summit",
-  "site_manager": "vishal@rrcl.mu",
+  "site_manager": "",
   "site_name": "The Summit",
-  "store_manager": "selvina@rrcl.mu",
+  "store_manager": "A783",
   "warehouse": null
  },
  {
@@ -57,11 +57,11 @@
   "docstatus": 0,
   "doctype": "RRCL Work Site",
   "geolocation_azdf": null,
-  "modified": "2025-11-18 17:39:19.622124",
+  "modified": "2025-11-25 01:25:12.092970",
   "name": "Anahita H47",
-  "site_manager": null,
+  "site_manager": "A100",
   "site_name": "Anahita H47",
-  "store_manager": null,
+  "store_manager": "A786",
   "warehouse": null
  },
  {
@@ -83,9 +83,9 @@
   "docstatus": 0,
   "doctype": "RRCL Work Site",
   "geolocation_azdf": null,
-  "modified": "2025-11-19 15:08:42.113829",
+  "modified": "2025-11-25 01:18:34.263068",
   "name": "Helvetia",
-  "site_manager": null,
+  "site_manager": "A772",
   "site_name": "Helvetia",
   "store_manager": null,
   "warehouse": null
