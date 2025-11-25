@@ -1,0 +1,31 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "Email",
+ "condition_type": "Python",
+ "creation": "2025-11-25 15:32:27.005002",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "RRCL Purchase Requisition",
+ "enabled": 1,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message here",
+ "message_type": "Markdown",
+ "minutes_offset": 0,
+ "modified": "2025-11-25 15:32:27.005002",
+ "modified_by": "Administrator",
+ "module": "RRCL",
+ "name": "RRCL: New Purchase Requisition",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "cc": "njoolfoo@gmail.com"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "RRCL: New PR {{ doc.name }}"
+}
