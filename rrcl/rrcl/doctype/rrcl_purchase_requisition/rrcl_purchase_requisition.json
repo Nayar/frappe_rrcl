@@ -102,7 +102,7 @@
  "is_calendar_and_gantt": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-11-25 01:46:34.191432",
+ "modified": "2025-11-26 12:42:57.204300",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Purchase Requisition",
@@ -110,6 +110,7 @@
  "owner": "Administrator",
  "permissions": [
   {
+   "cancel": 1,
    "create": 1,
    "delete": 1,
    "email": 1,
