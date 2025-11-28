@@ -1,7 +1,7 @@
 {
  "app": "rrcl",
  "charts": [],
- "content": "[{\"id\":\"SbLdilW2pn\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">RRCL</span>\",\"col\":12}},{\"id\":\"k_0qSVEZjR\",\"type\":\"card\",\"data\":{\"card_name\":\"Inventory\",\"col\":4}},{\"id\":\"-uhbQM8PdZ\",\"type\":\"card\",\"data\":{\"card_name\":\"HR\",\"col\":4}},{\"id\":\"9DxPJc9y_a\",\"type\":\"card\",\"data\":{\"card_name\":\"General\",\"col\":4}}]",
+ "content": "[{\"id\":\"SbLdilW2pn\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">RRCL</span>\",\"col\":12}},{\"id\":\"k_0qSVEZjR\",\"type\":\"card\",\"data\":{\"card_name\":\"Inventory\",\"col\":5}},{\"id\":\"-uhbQM8PdZ\",\"type\":\"card\",\"data\":{\"card_name\":\"HR\",\"col\":4}},{\"id\":\"9DxPJc9y_a\",\"type\":\"card\",\"data\":{\"card_name\":\"General\",\"col\":4}}]",
  "creation": "2025-11-24 23:58:44.822764",
  "custom_blocks": [],
  "docstatus": 0,
@@ -37,8 +37,27 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "HR",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "RRCL Employee",
+   "link_count": 0,
+   "link_to": "RRCL Employee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "Inventory",
-   "link_count": 2,
+   "link_count": 8,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -56,6 +75,16 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "RRCL Stock Entry",
+   "link_count": 0,
+   "link_to": "RRCL Stock Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "RRCL Item",
    "link_count": 0,
    "link_to": "RRCL Item",
@@ -66,24 +95,55 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "HR",
-   "link_count": 1,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "RRCL Employee",
    "link_count": 0,
    "link_to": "RRCL Employee",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "RRCL Item Category",
+   "link_count": 0,
+   "link_to": "RRCL Item Category",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "RRCL Construction Phase",
+   "link_count": 0,
+   "link_to": "RRCL Construction Phase",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "RRCL Scaffolding Request",
+   "link_count": 0,
+   "link_to": "RRCL Scaffolding Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "RRCL Work Site",
+   "link_count": 0,
+   "link_to": "RRCL Work Site",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-11-25 01:40:53.418846",
+ "modified": "2025-11-28 16:52:06.103952",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL",
