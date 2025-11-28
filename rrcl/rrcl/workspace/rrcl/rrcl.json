@@ -1,7 +1,7 @@
 {
  "app": "rrcl",
  "charts": [],
- "content": "[{\"id\":\"SbLdilW2pn\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">RRCL</span>\",\"col\":12}},{\"id\":\"k_0qSVEZjR\",\"type\":\"card\",\"data\":{\"card_name\":\"Inventory\",\"col\":5}},{\"id\":\"-uhbQM8PdZ\",\"type\":\"card\",\"data\":{\"card_name\":\"HR\",\"col\":4}},{\"id\":\"9DxPJc9y_a\",\"type\":\"card\",\"data\":{\"card_name\":\"General\",\"col\":4}}]",
+ "content": "[{\"id\":\"SbLdilW2pn\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">RRCL</span>\",\"col\":12}},{\"id\":\"k_0qSVEZjR\",\"type\":\"card\",\"data\":{\"card_name\":\"Inventory\",\"col\":6}}]",
  "creation": "2025-11-24 23:58:44.822764",
  "custom_blocks": [],
  "docstatus": 0,
@@ -18,46 +18,8 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "General",
-   "link_count": 1,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "RRCL Work Site",
-   "link_count": 0,
-   "link_to": "RRCL Work Site",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "HR",
-   "link_count": 1,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "RRCL Employee",
-   "link_count": 0,
-   "link_to": "RRCL Employee",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Inventory",
-   "link_count": 8,
+   "link_count": 9,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -141,9 +103,19 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "RRCL Settings",
+   "link_count": 0,
+   "link_to": "RRCL Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-11-28 16:52:06.103952",
+ "modified": "2025-11-28 18:07:34.604960",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL",
@@ -152,11 +124,7 @@
  "parent_page": "",
  "public": 1,
  "quick_lists": [],
- "roles": [
-  {
-   "role": "All"
-  }
- ],
+ "roles": [],
  "sequence_id": 67.0,
  "shortcuts": [],
  "title": "RRCL",
