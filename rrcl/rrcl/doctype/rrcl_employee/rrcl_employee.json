@@ -14,6 +14,7 @@
   "first_name",
   "last_name",
   "active",
+  "mauritian",
   "phone",
   "user",
   "column_break_bzmy",
@@ -129,12 +130,18 @@
    "fieldtype": "Link",
    "label": "User",
    "options": "User"
+  },
+  {
+   "default": "1",
+   "fieldname": "mauritian",
+   "fieldtype": "Check",
+   "label": "Mauritian"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-25 01:52:37.912700",
+ "modified": "2025-11-28 18:27:43.672256",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Employee",
