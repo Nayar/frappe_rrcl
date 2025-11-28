@@ -1,0 +1,27 @@
+{
+ "app": "rrcl",
+ "creation": "2025-11-28 17:48:35.008161",
+ "docstatus": 0,
+ "doctype": "Workspace Sidebar",
+ "header_icon": "bolt",
+ "idx": 0,
+ "items": [
+  {
+   "child": 0,
+   "collapsible": 1,
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Home",
+   "link_to": "RRCL",
+   "link_type": "Workspace",
+   "show_arrow": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-11-28 18:49:32.099207",
+ "modified_by": "Administrator",
+ "module": "RRCL",
+ "name": "RRCL",
+ "owner": "Administrator",
+ "title": "RRCL"
+}
