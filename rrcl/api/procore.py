@@ -55,11 +55,14 @@ class ProcoreAPI:
         print(url)
         # return {}
         params = {"run_configurable_validations": str(run_validations).lower()}
-        payload = {"user": {
-            'first_name' : doc['first_name'],
-            'last_name' : doc['last_name'],
-            'employee_id' : doc['employee_code']
-        },"json": True}
+        payload = {
+            "user": {
+                'first_name' : doc['first_name'],
+                'last_name' : doc['last_name'],
+                'employee_id' : doc['employee_code']
+            },
+            "json": True
+        }
 
         response = requests.patch(url, headers=ProcoreAPI._headers(), json=payload, params=params)
 
