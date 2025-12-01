@@ -23,6 +23,7 @@
   "attendance_type",
   "job_title",
   "date_of_birth",
+  "procore_id",
   "section_break_bwhq",
   "date_joined",
   "date_left",
@@ -75,7 +76,7 @@
    "default": "1",
    "fieldname": "active",
    "fieldtype": "Check",
-   "label": "Active"
+   "label": "Is Active"
   },
   {
    "fieldname": "section_break_bwhq",
@@ -135,13 +136,18 @@
    "default": "1",
    "fieldname": "mauritian",
    "fieldtype": "Check",
-   "label": "Mauritian"
+   "label": "Is Mauritian"
+  },
+  {
+   "fieldname": "procore_id",
+   "fieldtype": "Data",
+   "label": "Procore ID"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-28 18:27:43.672256",
+ "modified": "2025-12-01 12:00:02.162361",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Employee",
