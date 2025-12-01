@@ -65,9 +65,7 @@ class ProcoreAPI:
 
         if response.status_code in [200, 201]:
             procore_user = response.json()
-            print(procore_user)
-            doc.procore_id = procore_user['id']
-            doc.save()
+            doc.db_set('procore_id', procore_user['id']) 
             return procore_user
         else:
             frappe.throw(f"❗ Failed to create/update Procore user: {response.status_code} {response.text}")
