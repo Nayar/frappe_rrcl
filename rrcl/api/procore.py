@@ -81,9 +81,11 @@ class ProcoreAPI:
         params = {"run_configurable_validations": str(run_validations).lower()}
         payload = {
             "user": {
-                'first_name' : doc['first_name'],
-                'last_name' : doc['last_name'],
-                'employee_id' : doc['employee_code'],
+                'first_name' : doc.first_name,
+                'last_name' : doc.last_name,
+                'employee_id' : doc.employee_code,
+                "is_employee": True,
+                'email_address' : doc.get('email') or f"{doc.employee_code}@rrcl.mu",
                 "is_employee": True
             },
             "json": True
