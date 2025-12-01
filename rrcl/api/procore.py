@@ -17,7 +17,7 @@ def receive_procore_webhook():
         else:
             data = json.loads(frappe.local.request.get_data(as_text=True))
         new_doc = frappe.get_doc({
-            "doctype": "RRCL WebHook Receiver",
+            "doctype": "RRCL WebHook Event",
             "body" : data
         })
         new_doc.insert(ignore_permissions=True)
@@ -31,7 +31,7 @@ def receive_procore_webhook():
     except Exception as e:
         frappe.log_error(message=str(e), title="Procore Webhook Error")
         new_doc = frappe.get_doc({
-            "doctype": "RRCL WebHook Receiver",
+            "doctype": "RRCL WebHook Event",
             "body" : {"status": "error", "message": str(e)}
         })
         new_doc.insert(ignore_permissions=True)
