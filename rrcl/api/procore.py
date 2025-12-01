@@ -146,7 +146,7 @@ def sync_employees_to_procore(*args,**kwargs):
     success_count = 0
     errors = []
     try:
-        if(doc['procore_id']):
+        if(doc.procore_id):
             procore_user = ProcoreAPI.update_user(doc)
     except:
         procore_user = ProcoreAPI.create_user(employee)
