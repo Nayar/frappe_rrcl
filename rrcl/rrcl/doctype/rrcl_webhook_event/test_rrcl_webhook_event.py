@@ -13,9 +13,9 @@ IGNORE_TEST_RECORD_DEPENDENCIES = []  # eg. ["User"]
 
 
 
-class IntegrationTestRRCLWebHookReceiver(IntegrationTestCase):
+class IntegrationTestRRCLWebHookEvent(IntegrationTestCase):
 	"""
-	Integration tests for RRCLWebHookReceiver.
+	Integration tests for RRCLWebHookEvent.
 	Use this class for testing interactions between multiple components.
 	"""
 

@@ -26,7 +26,7 @@
  "modified": "2025-12-01 11:21:45.974640",
  "modified_by": "Administrator",
  "module": "RRCL",
- "name": "RRCL WebHook Receiver",
+ "name": "RRCL WebHook Event",
  "owner": "Administrator",
  "permissions": [
   {
