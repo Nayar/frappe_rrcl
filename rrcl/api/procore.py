@@ -146,9 +146,15 @@ def sync_employees_to_procore(*args,**kwargs):
     success_count = 0
     errors = []
     try:
+        print("try updating")
         if(employee.procore_id):
+            print("updating")
             procore_user = ProcoreAPI.update_user(employee)
+        else:
+            print("creating")
+            procore_user = ProcoreAPI.create_user(employee)
     except:
+        print("creating")
         procore_user = ProcoreAPI.create_user(employee)
         print("No user found")
     return f"Success: {success_count}, Errors: {len(errors)}"
