@@ -75,7 +75,7 @@ class ProcoreAPI:
         user: dict containing:
         first_name, last_name, job_title, is_active, is_employee, employee_id, email_address
         """
-        url = f"{ProcoreAPI.BASE_URL}/companies/{ProcoreAPI.COMPANY_ID}/users/{doc['procore_id']}"
+        url = f"{ProcoreAPI.BASE_URL}/companies/{ProcoreAPI.COMPANY_ID}/users/{doc.procore_id}"
         print(url)
         # return {}
         params = {"run_configurable_validations": str(run_validations).lower()}
@@ -146,8 +146,8 @@ def sync_employees_to_procore(*args,**kwargs):
     success_count = 0
     errors = []
     try:
-        if(doc.procore_id):
-            procore_user = ProcoreAPI.update_user(doc)
+        if(employee.procore_id):
+            procore_user = ProcoreAPI.update_user(employee)
     except:
         procore_user = ProcoreAPI.create_user(employee)
         print("No user found")
