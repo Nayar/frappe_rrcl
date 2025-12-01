@@ -12,7 +12,8 @@
   "rrcl_name",
   "barcode",
   "allow_in_purchase_requisition",
-  "daily_rate",
+  "uom",
+  "unit_price",
   "category"
  ],
  "fields": [
@@ -52,21 +53,26 @@
    "label": "Allow in Purchase Requisition"
   },
   {
-   "fieldname": "daily_rate",
-   "fieldtype": "Data",
-   "label": "Daily Rate"
-  },
-  {
    "fieldname": "category",
    "fieldtype": "Link",
    "label": "Category",
    "options": "RRCL Item Category"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Data",
+   "label": "Unit of Measure"
+  },
+  {
+   "fieldname": "unit_price",
+   "fieldtype": "Data",
+   "label": "Unit Price"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-01 12:23:43.919677",
+ "modified": "2025-12-01 12:29:22.352524",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Item",
