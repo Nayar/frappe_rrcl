@@ -83,7 +83,8 @@ class ProcoreAPI:
             "user": {
                 'first_name' : doc['first_name'],
                 'last_name' : doc['last_name'],
-                'employee_id' : doc['employee_code']
+                'employee_id' : doc['employee_code'],
+                "is_employee": True
             },
             "json": True
         }
@@ -92,7 +93,6 @@ class ProcoreAPI:
 
         if response.status_code in [200, 201]:
             procore_user = response.json()
-            
             return procore_user
         else:
             frappe.throw(f"❗ Failed to create/update Procore user: {response.status_code} {response.text}")
