@@ -1,5 +1,11 @@
 {
- "actions": [],
+ "actions": [
+  {
+   "action": "rrcl.api.procore.sync_employees_to_procore",
+   "action_type": "Server Action",
+   "label": "Sync to Procore"
+  }
+ ],
  "allow_events_in_timeline": 1,
  "allow_import": 1,
  "autoname": "field:employee_code",
@@ -147,7 +153,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-01 12:00:02.162361",
+ "modified": "2025-12-01 14:00:29.575203",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Employee",

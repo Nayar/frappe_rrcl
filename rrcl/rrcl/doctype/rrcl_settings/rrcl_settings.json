@@ -5,7 +5,8 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "allow_pr_on_date"
+  "allow_pr_on_date",
+  "procore_token"
  ],
  "fields": [
   {
@@ -13,13 +14,20 @@
    "fieldtype": "Select",
    "label": "Allow Purchase Requisition on Date",
    "options": "All\nMonday\nTuesday\nWednesday\nThursday\nFriday\nSaturday\nSunday"
+  },
+  {
+   "fieldname": "procore_token",
+   "fieldtype": "Password",
+   "label": "ProCore Token",
+   "mask": 1,
+   "permlevel": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2025-11-24 23:29:23.301348",
+ "modified": "2025-12-01 14:14:09.493729",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Settings",
@@ -29,6 +37,16 @@
    "create": 1,
    "delete": 1,
    "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "delete": 1,
+   "email": 1,
+   "permlevel": 1,
    "print": 1,
    "read": 1,
    "role": "System Manager",
