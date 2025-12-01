@@ -61,7 +61,7 @@ class ProcoreAPI:
             'employee_id' : doc['employee_code']
         },"json": True}
 
-        response = requests.put(url, headers=ProcoreAPI._headers(), json=payload, params=params)
+        response = requests.patch(url, headers=ProcoreAPI._headers(), json=payload, params=params)
 
         if response.status_code in [200, 201]:
             return response.json()
