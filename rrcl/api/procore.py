@@ -42,9 +42,34 @@ class ProcoreAPI:
         else:
             frappe.throw(f"❗ Failed fetching Procore User: {response.status_code} {response.text}")
 
-    # -----------------------------------------------------------
-    #  STATIC → Create/Update a User in Procore
-    # -----------------------------------------------------------
+    @staticmethod
+    def create_user(doc, run_validations=False):
+        """
+        user: dict containing:
+        first_name, last_name, job_title, is_active, is_employee, employee_id, email_address
+        """
+        url = f"{ProcoreAPI.BASE_URL}/companies/{ProcoreAPI.COMPANY_ID}/users"
+        params = {"run_configurable_validations": str(run_validations).lower()}
+        payload = {
+            "user": {
+                'first_name' : doc.first_name,
+                'last_name' : doc.last_name,
+                'employee_id' : doc.employee_code,
+                'email_address' : doc.get('email') or f"{doc.employee_code}@rrcl.mu"
+            },
+            "json": True
+        }
+        print(url, payload)
+        response = requests.post(url, headers=ProcoreAPI._headers(), json=payload, params=params)
+
+        if response.status_code in [200, 201]:
+            procore_user = response.json()
+            print(procore_user)
+            doc.procore_id = procore_user['id']
+            doc.save()
+            return procore_user
+        else:
+            frappe.throw(f"❗ Failed to create/update Procore user: {response.status_code} {response.text}")
     @staticmethod
     def update_user(doc, run_validations=False):
         """
@@ -67,7 +92,9 @@ class ProcoreAPI:
         response = requests.patch(url, headers=ProcoreAPI._headers(), json=payload, params=params)
 
         if response.status_code in [200, 201]:
-            return response.json()
+            procore_user = response.json()
+            
+            return procore_user
         else:
             frappe.throw(f"❗ Failed to create/update Procore user: {response.status_code} {response.text}")
 
@@ -110,10 +137,17 @@ def receive_procore_webhook():
         
 @frappe.whitelist()
 def sync_employees_to_procore(*args,**kwargs):
-    print(kwargs)
     doc = json.loads(kwargs['doc'])
+
+    employee = frappe.get_doc("RRCL Employee",doc['name'])
+    print(employee)
 
     success_count = 0
     errors = []
-    procore_user = ProcoreAPI.update_user(doc)
+    try:
+        if(doc['procore_id']):
+            procore_user = ProcoreAPI.update_user(doc)
+    except:
+        procore_user = ProcoreAPI.create_user(employee)
+        print("No user found")
     return f"Success: {success_count}, Errors: {len(errors)}"
