@@ -12,7 +12,8 @@
   "rrcl_name",
   "barcode",
   "allow_in_purchase_requisition",
-  "daily_rate"
+  "daily_rate",
+  "category"
  ],
  "fields": [
   {
@@ -54,12 +55,18 @@
    "fieldname": "daily_rate",
    "fieldtype": "Data",
    "label": "Daily Rate"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "label": "Category",
+   "options": "RRCL Item Category"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-24 14:27:06.314820",
+ "modified": "2025-12-01 12:23:43.919677",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Item",
