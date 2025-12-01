@@ -57,7 +57,8 @@ class ProcoreAPI:
         params = {"run_configurable_validations": str(run_validations).lower()}
         payload = {"user": {
             'first_name' : doc['first_name'],
-            'last_name' : doc['last_name']
+            'last_name' : doc['last_name'],
+            'employee_id' : doc['employee_code']
         },"json": True}
 
         response = requests.put(url, headers=ProcoreAPI._headers(), json=payload, params=params)
