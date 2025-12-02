@@ -163,7 +163,7 @@ app_license = "agpl-3.0"
 
 scheduler_events = {
     "cron": {
-        "0 * * * *": [
+        "20 * * * *": [
             "rrcl.api.payroll_mauritius.sync_employees"
         ]
     }
