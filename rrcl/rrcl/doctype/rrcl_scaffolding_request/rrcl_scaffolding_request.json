@@ -10,7 +10,9 @@
   "site",
   "type",
   "circumference",
-  "height"
+  "height",
+  "calculate",
+  "table_yngh"
  ],
  "fields": [
   {
@@ -48,13 +50,23 @@
    "fieldname": "height",
    "fieldtype": "Int",
    "label": "Height"
+  },
+  {
+   "fieldname": "table_yngh",
+   "fieldtype": "Table",
+   "options": "RRCL Purchase Requisition Item"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-11-24 14:56:08.589773",
+ "modified": "2025-12-02 23:03:14.744577",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Scaffolding Request",

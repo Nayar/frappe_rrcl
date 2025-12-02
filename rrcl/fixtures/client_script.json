@@ -2,6 +2,17 @@
  {
   "docstatus": 0,
   "doctype": "Client Script",
+  "dt": "RRCL Employee",
+  "enabled": 1,
+  "modified": "2025-12-02 14:17:06.486326",
+  "module": "RRCL",
+  "name": "Sync Payroll Mauritius",
+  "script": "frappe.listview_settings['RRCL Employee'] = {\n    onload: function(listview) {\n        listview.page.add_action_item(__('Sync Employees'), function() {\n            frappe.call({\n                method: \"rrcl.api.payroll_mauritius.sync_employees\",\n                callback: function(r) {\n                    frappe.show_alert({message: __('Employees synced!'), indicator: 'green'});\n                    listview.refresh();\n                }\n            });\n        });\n    }\n};\n",
+  "view": "List"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
   "dt": "RRCL Purchase Requisition",
   "enabled": 1,
   "modified": "2025-11-26 13:10:21.588261",
@@ -9,5 +20,16 @@
   "name": "Test  RRCL Purchase Requisition",
   "script": "frappe.listview_settings['RRCL Purchase Requisition'] = {\n    onload(listview) {\n        // Apply default filter only for RRCL Procurement Officer\n        // frappe.session.user !== \"Administrator\" && \n        if (frappe.session.user !== \"Administrator\" && frappe.user.has_role(\"RRCL Procurement Officer\")) {\n            listview.filter_area.add([[\"RRCL Purchase Requisition\", \"workflow_state\", \"in\", ['To Procure', 'Procurement in Progress']]]);\n        }\n    }\n};",
   "view": "List"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "RRCL Scaffolding Request",
+  "enabled": 1,
+  "modified": "2025-12-02 23:20:44.151072",
+  "module": "RRCL",
+  "name": "Scafolding Request Filter",
+  "script": "frappe.ui.form.on('RRCL Scaffolding Request', {\n    refresh(frm) {\n        frm.set_query(\"item\", \"table_yngh\", function() {\n            return {\n                filters: {\n                    category: \"Scaffolding\"\n                }\n            };\n        });\n    },\n    calculate(frm) {\n\n        // Clear existing rows if needed — optional\n        // frm.clear_table(\"items\");\n\n        let item_list = [\"a89fsrs05h\", \"a897ujo1q1\"];\n\n        item_list.forEach(code => {\n            let row = frm.add_child(\"table_yngh\");\n            row.item = code;\n        });\n\n        frm.refresh_field(\"table_yngh\");\n    }\n});\n\nfrappe.ui.form.on('RRCL Purchase Requisition Item', {\n\trefresh(frm) {\n\t\t// your code here\n// \t\tfrm.set_query(\"item\", \"table_yngh\", function() {\n//             return {\n//                 filters: {\n//                     category: \"Scaffolding\"\n//                 }\n//             };\n//         });\n\t}\n})",
+  "view": "Form"
  }
 ]
