@@ -19,7 +19,8 @@ class PayrollMauritius:
                 "employee_code": epm.get("code"),
                 "first_name": epm.get("firstname"),
                 "last_name": epm.get("lastname"),
-                "date_joined": epm.get("date_joined")
+                "date_joined": epm.get("date_joined"),
+                "date_left" : epm.get("departure_date")
             }
 
             existing_name = frappe.db.get_value(
@@ -30,12 +31,12 @@ class PayrollMauritius:
 
             if existing_name:
                 # Update existing employee
-                print("updating", data)
+                # print("updating", data)
                 rrcl_employee = frappe.get_doc("RRCL Employee", existing_name)
                 rrcl_employee.update(data)
             else:
                 # Create new employee
-                print("creating", data)
+                # print("creating", data)
                 rrcl_employee = frappe.get_doc({
                     "doctype": "RRCL Employee",
                     **data
