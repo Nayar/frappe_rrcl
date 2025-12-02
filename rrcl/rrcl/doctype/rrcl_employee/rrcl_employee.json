@@ -165,7 +165,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-02 02:16:57.247712",
+ "modified": "2025-12-02 12:40:41.674033",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Employee",
@@ -191,5 +191,6 @@
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": [],
- "title_field": "full_name"
+ "title_field": "full_name",
+ "track_changes": 1
 }
