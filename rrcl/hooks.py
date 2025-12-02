@@ -161,6 +161,14 @@ app_license = "agpl-3.0"
 # 	],
 # }
 
+scheduler_events = {
+    "cron": {
+        "* * * * *": [
+            "rrcl.api.payroll_mauritius.sync_employees"
+        ]
+    }
+}
+
 # Testing
 # -------
 
