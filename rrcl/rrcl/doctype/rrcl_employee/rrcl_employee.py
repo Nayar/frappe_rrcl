@@ -12,6 +12,9 @@ class RRCLEmployee(Document):
 		print("before save")
 		self.full_name = f"{self.first_name} {self.last_name} ({self.employee_code})"
 		print(self.date_left)
+		if(not self.is_mauritian and self.nationality == "Mauritian"):
+			self.nationality = None
+
 		if getattr(self, "date_left", None):
 			# Convert to date if it's a string
 			print("testing", self)

@@ -20,7 +20,9 @@ class PayrollMauritius:
                 "first_name": epm.get("firstname"),
                 "last_name": epm.get("lastname"),
                 "date_joined": epm.get("date_joined"),
-                "date_left" : epm.get("departure_date")
+                "date_left" : epm.get("departure_date"),
+                "is_mauritian" : epm.get("mauritian"),
+                "nic": epm.get("nic")
             }
 
             existing_name = frappe.db.get_value(
