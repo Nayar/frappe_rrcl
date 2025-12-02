@@ -48,9 +48,8 @@ class PayrollMauritius:
             print('OK')
 
 def sync_employees():
+    frappe.logger().info("cron.... sync_employees start")   # logs to worker.log
     """Can be called from client side or list view"""
-    # PayrollMauritius.fetch_employees()
-    # frappe.msgprint(_("Employee sync completed"))
+    PayrollMauritius.fetch_employees()
     print("cron job payroll")
-    frappe.logger().info("cron.... sync_employees")   # logs to worker.log
-    frappe.log_error("cron.... sync_employees", "Payroll Cron")  # logs to Desk > Error Log
+    frappe.logger().info("cron.... sync_employees end")   # logs to worker.log
