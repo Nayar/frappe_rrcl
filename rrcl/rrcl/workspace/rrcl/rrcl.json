@@ -1,7 +1,7 @@
 {
  "app": "rrcl",
  "charts": [],
- "content": "[{\"id\":\"SbLdilW2pn\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">RRCL</span>\",\"col\":12}},{\"id\":\"k_0qSVEZjR\",\"type\":\"card\",\"data\":{\"card_name\":\"Inventory\",\"col\":6}},{\"id\":\"fvKQpTxOxE\",\"type\":\"card\",\"data\":{\"card_name\":\"HR\",\"col\":4}}]",
+ "content": "[{\"id\":\"SbLdilW2pn\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">RRCL</span>\",\"col\":12}},{\"id\":\"k_0qSVEZjR\",\"type\":\"card\",\"data\":{\"card_name\":\"Inventory\",\"col\":4}},{\"id\":\"fvKQpTxOxE\",\"type\":\"card\",\"data\":{\"card_name\":\"HR\",\"col\":4}}]",
  "creation": "2025-11-24 23:58:44.822764",
  "custom_blocks": [],
  "docstatus": 0,
@@ -144,7 +144,7 @@
    "type": "Link"
   }
  ],
- "modified": "2025-12-02 13:50:10.171074",
+ "modified": "2025-12-02 23:35:35.994098",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL",
