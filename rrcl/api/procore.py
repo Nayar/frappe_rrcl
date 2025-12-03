@@ -8,15 +8,25 @@ class ProcoreAPI:
 
     COMPANY_ID = "598134325766849"      # you may keep fixed OR pass via settings
     BASE_URL = f"https://api.procore.com/rest/v1.3"
+    TOKEN_URL = "https://login.procore.com/oauth/token"
     
 
     @staticmethod
     def _get_token():
-        """Fetch Procore token from RRCL Settings"""
-        settings = frappe.get_single("RRCL Settings")   # Gets single doctype entry
-        if not settings.procore_token:
-            frappe.throw("❗ Procore Token missing in RRCL Settings")
-        return settings.get_password("procore_token")
+        """Generate a fresh access token on every request."""
+        settings = frappe.get_single("RRCL Settings")
+
+        payload = {
+            "grant_type": "client_credentials",
+            "client_id": settings.procore_client_id,
+            "client_secret": settings.get_password("procore_client_secret")
+        }
+
+        response = requests.post(ProcoreAPI.TOKEN_URL, data=payload)
+        if response.status_code != 200:
+            frappe.throw(f"❗ Failed generating Procore token: {response.text}")
+
+        return response.json()["access_token"]
 
     @staticmethod
     def _headers():
