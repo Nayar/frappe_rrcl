@@ -72,9 +72,8 @@
   }
  ],
  "grid_page_length": 50,
- "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-02 23:01:40.301199",
+ "modified": "2025-12-04 09:38:42.577733",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Item",
@@ -89,6 +88,7 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "select": 1,
    "share": 1,
    "write": 1
   }
