@@ -1,0 +1,39 @@
+{
+ "add_total_row": 0,
+ "add_translate_data": 0,
+ "columns": [],
+ "creation": "2025-12-04 11:06:07.415584",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "RRCL Work Site",
+   "fieldtype": "Link",
+   "label": "Work Site",
+   "mandatory": 0,
+   "options": "RRCL Work Site",
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{}",
+ "letter_head": null,
+ "modified": "2025-12-04 13:36:37.266265",
+ "modified_by": "Administrator",
+ "module": "RRCL",
+ "name": "RRCL Site Purchase Requisition By Item and Site",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT \n    item.rrcl_name,\n    pr.work_site,\n    SUM(pri.qty) AS ordered,\n    IFNULL(se.delivered_qty, 0) AS delivered\nFROM `tabRRCL Purchase Requisition Item` AS pri\nLEFT JOIN `tabRRCL Purchase Requisition` AS pr \n    ON pri.parent = pr.name\nLEFT JOIN `tabRRCL Item` AS item \n    ON pri.item = item.name\nLEFT JOIN (\n    SELECT \n        sei.item AS item_code,\n        se.work_site,\n        SUM(sei.qty) AS delivered_qty\n    FROM `tabRRCL Stock Entry Item` AS sei\n    LEFT JOIN `tabRRCL Stock Entry` AS se \n        ON sei.parent = se.name\n    GROUP BY sei.item, se.work_site\n) AS se \n    ON pri.item = se.item_code\n    AND pr.work_site = se.work_site\nGROUP BY pri.item, pr.work_site;\n",
+ "ref_doctype": "RRCL Item",
+ "report_name": "RRCL Site Purchase Requisition By Item and Site",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "timeout": 0
+}
