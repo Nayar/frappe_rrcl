@@ -9,7 +9,7 @@
   "amended_from",
   "site",
   "type",
-  "circumference",
+  "perimeter",
   "height",
   "calculate",
   "table_yngh"
@@ -42,11 +42,6 @@
    "options": "Type 1\nType 2"
   },
   {
-   "fieldname": "circumference",
-   "fieldtype": "Int",
-   "label": "Circumference"
-  },
-  {
    "fieldname": "height",
    "fieldtype": "Int",
    "label": "Height"
@@ -60,13 +55,18 @@
    "fieldname": "calculate",
    "fieldtype": "Button",
    "label": "Calculate"
+  },
+  {
+   "fieldname": "perimeter",
+   "fieldtype": "Int",
+   "label": "Perimeter"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-12-02 23:03:14.744577",
+ "modified": "2025-12-05 14:58:47.588194",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Scaffolding Request",
