@@ -70,11 +70,11 @@
   "docstatus": 0,
   "doctype": "RRCL Work Site",
   "geolocation_azdf": null,
-  "modified": "2025-11-18 17:39:32.977177",
-  "name": "Black River M86",
-  "site_manager": null,
-  "site_name": "Black River M86",
-  "store_manager": null,
+  "modified": "2025-11-25 01:25:12.092970",
+  "name": "Anahita H47",
+  "site_manager": "A100",
+  "site_name": "Anahita H47",
+  "store_manager": "A786",
   "warehouse": null
  },
  {
@@ -83,11 +83,11 @@
   "docstatus": 0,
   "doctype": "RRCL Work Site",
   "geolocation_azdf": null,
-  "modified": "2025-11-25 01:25:12.092970",
-  "name": "Anahita H47",
-  "site_manager": "A100",
-  "site_name": "Anahita H47",
-  "store_manager": "A786",
+  "modified": "2025-11-18 17:39:32.977177",
+  "name": "Black River M86",
+  "site_manager": null,
+  "site_name": "Black River M86",
+  "store_manager": null,
   "warehouse": null
  }
 ]
