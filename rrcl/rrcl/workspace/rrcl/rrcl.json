@@ -1,7 +1,7 @@
 {
  "app": "rrcl",
  "charts": [],
- "content": "[{\"id\":\"SbLdilW2pn\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">RRCL</span>\",\"col\":12}},{\"id\":\"k_0qSVEZjR\",\"type\":\"card\",\"data\":{\"card_name\":\"Inventory\",\"col\":4}},{\"id\":\"fvKQpTxOxE\",\"type\":\"card\",\"data\":{\"card_name\":\"HR\",\"col\":4}}]",
+ "content": "[{\"id\":\"SbLdilW2pn\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">RRCL</span>\",\"col\":12}},{\"id\":\"k_0qSVEZjR\",\"type\":\"card\",\"data\":{\"card_name\":\"Inventory\",\"col\":4}},{\"id\":\"fvKQpTxOxE\",\"type\":\"card\",\"data\":{\"card_name\":\"HR\",\"col\":4}},{\"id\":\"U9wJ5AIbYm\",\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}}]",
  "creation": "2025-11-24 23:58:44.822764",
  "custom_blocks": [],
  "docstatus": 0,
@@ -142,9 +142,28 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "RRCL Site Purchase Requisition By Item and Site",
+   "link_count": 0,
+   "link_to": "RRCL Site Purchase Requisition By Item and Site",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-12-02 23:35:35.994098",
+ "modified": "2025-12-05 11:48:44.893073",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL",
