@@ -93,18 +93,18 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-11-18 21:37:34.551145",
-  "name": "Draft",
+  "modified": "2025-11-18 21:37:57.003780",
+  "name": "Needs Site Manager Approval",
   "style": "",
-  "workflow_state_name": "Draft"
+  "workflow_state_name": "Needs Site Manager Approval"
  },
  {
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-11-18 21:37:57.003780",
-  "name": "Needs Site Manager Approval",
+  "modified": "2025-11-18 21:37:34.551145",
+  "name": "Draft",
   "style": "",
-  "workflow_state_name": "Needs Site Manager Approval"
+  "workflow_state_name": "Draft"
  }
 ]

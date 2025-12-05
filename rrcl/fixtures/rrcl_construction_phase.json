@@ -16,12 +16,60 @@
   "name": "PH3"
  },
  {
-  "code": "PH2",
-  "description": "PH2 - Site Establishment",
+  "code": "PH5",
+  "description": "Superstructure",
   "docstatus": 0,
   "doctype": "RRCL Construction Phase",
-  "modified": "2025-11-21 14:17:43.271750",
-  "name": "PH2"
+  "modified": "2025-12-05 11:33:07.988374",
+  "name": "PH5"
+ },
+ {
+  "code": "PH6",
+  "description": "Enclosure",
+  "docstatus": 0,
+  "doctype": "RRCL Construction Phase",
+  "modified": "2025-12-05 11:33:45.233398",
+  "name": "PH6"
+ },
+ {
+  "code": "PH7",
+  "description": "Roofer",
+  "docstatus": 0,
+  "doctype": "RRCL Construction Phase",
+  "modified": "2025-12-05 11:34:02.100417",
+  "name": "PH7"
+ },
+ {
+  "code": "PH8",
+  "description": "MEP (Mechanical, Electrical, Plumbing",
+  "docstatus": 0,
+  "doctype": "RRCL Construction Phase",
+  "modified": "2025-12-05 11:34:29.031149",
+  "name": "PH8"
+ },
+ {
+  "code": "PH9",
+  "description": "Finishes - Interior & Exterior",
+  "docstatus": 0,
+  "doctype": "RRCL Construction Phase",
+  "modified": "2025-12-05 11:34:56.333923",
+  "name": "PH9"
+ },
+ {
+  "code": "PH10",
+  "description": "External Works",
+  "docstatus": 0,
+  "doctype": "RRCL Construction Phase",
+  "modified": "2025-12-05 11:35:10.467747",
+  "name": "PH10"
+ },
+ {
+  "code": "PH11",
+  "description": "Other Works",
+  "docstatus": 0,
+  "doctype": "RRCL Construction Phase",
+  "modified": "2025-12-05 11:35:22.479841",
+  "name": "PH11"
  },
  {
   "code": "PH1",
@@ -30,5 +78,13 @@
   "doctype": "RRCL Construction Phase",
   "modified": "2025-11-21 14:17:54.977497",
   "name": "PH1"
+ },
+ {
+  "code": "PH2",
+  "description": "PH2 - Site Establishment",
+  "docstatus": 0,
+  "doctype": "RRCL Construction Phase",
+  "modified": "2025-11-21 14:17:43.271750",
+  "name": "PH2"
  }
 ]
