@@ -38,6 +38,7 @@
    "in_standard_filter": 1,
    "label": "RRCL Name",
    "reqd": 1,
+   "set_only_once": 1,
    "unique": 1
   },
   {
@@ -73,7 +74,7 @@
  ],
  "grid_page_length": 50,
  "links": [],
- "modified": "2025-12-04 09:38:42.577733",
+ "modified": "2025-12-08 14:41:46.543412",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Item",
