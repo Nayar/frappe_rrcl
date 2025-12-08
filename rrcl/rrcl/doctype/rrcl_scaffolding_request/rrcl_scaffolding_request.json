@@ -39,7 +39,7 @@
    "fieldname": "type",
    "fieldtype": "Select",
    "label": "Type",
-   "options": "Type 1\nType 2"
+   "options": "Kwikstage\nRinglock"
   },
   {
    "fieldname": "height",
@@ -66,7 +66,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-12-05 14:58:47.588194",
+ "modified": "2025-12-05 17:38:18.801623",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Scaffolding Request",

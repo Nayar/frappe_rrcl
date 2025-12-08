@@ -31,13 +31,13 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Type",
-   "options": "Type 1\nType 2"
+   "options": "Kwikstage\nRinglock"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-05 15:24:32.385492",
+ "modified": "2025-12-05 17:38:55.570713",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Scaffolding Calculations",

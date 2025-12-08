@@ -66,7 +66,8 @@ class ProcoreAPI:
                 'last_name' : doc.last_name,
                 'employee_id' : doc.employee_code,
                 "is_employee": True,
-                'email_address' : doc.get('email') or f"{doc.employee_code}@rrcl.mu"
+                'email_address' : doc.get('email') or f"{doc.employee_code}@rrcl.mu",
+                'vendor_id' : "598134333021271"
             },
             "json": True
         }
@@ -96,7 +97,8 @@ class ProcoreAPI:
                 'employee_id' : doc.employee_code,
                 "is_employee": True,
                 'email_address' : doc.get('email') or f"{doc.employee_code}@rrcl.mu",
-                "is_employee": True
+                "is_employee": True,
+                "vendor_id" : "598134333021271"
             },
             "json": True
         }
