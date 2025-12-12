@@ -7,7 +7,7 @@ import requests
 class ProcoreAPI:
 
     COMPANY_ID = "598134325766849"      # you may keep fixed OR pass via settings
-    BASE_URL = f"https://api.procore.com/rest/v1.3"
+    BASE_URL = f"https://api.procore.com"
     TOKEN_URL = "https://login.procore.com/oauth/token"
     
 
@@ -41,7 +41,7 @@ class ProcoreAPI:
     # -----------------------------------------------------------
     @staticmethod
     def get_user_by_employee_id(employee_id):
-        url = f"{ProcoreAPI.BASE_URL}/companies/{ProcoreAPI.COMPANY_ID}/users"
+        url = f"{ProcoreAPI.BASE_URL}/rest/v1.3/companies/{ProcoreAPI.COMPANY_ID}/users"
         params = {"employee_id": employee_id}
         print(ProcoreAPI._headers())
         response = requests.get(url, headers=ProcoreAPI._headers(), params=params)
@@ -58,7 +58,7 @@ class ProcoreAPI:
         user: dict containing:
         first_name, last_name, job_title, is_active, is_employee, employee_id, email_address
         """
-        url = f"{ProcoreAPI.BASE_URL}/companies/{ProcoreAPI.COMPANY_ID}/users"
+        url = f"{ProcoreAPI.BASE_URL}/rest/v1.3/companies/{ProcoreAPI.COMPANY_ID}/users"
         params = {"run_configurable_validations": str(run_validations).lower()}
         payload = {
             "user": {
@@ -86,7 +86,7 @@ class ProcoreAPI:
         user: dict containing:
         first_name, last_name, job_title, is_active, is_employee, employee_id, email_address
         """
-        url = f"{ProcoreAPI.BASE_URL}/companies/{ProcoreAPI.COMPANY_ID}/users/{doc.procore_id}"
+        url = f"{ProcoreAPI.BASE_URL}/rest/v1.3/companies/{ProcoreAPI.COMPANY_ID}/users/{doc.procore_id}"
         print(url)
         # return {}
         params = {"run_configurable_validations": str(run_validations).lower()}
@@ -110,6 +110,54 @@ class ProcoreAPI:
             return procore_user
         else:
             frappe.throw(f"❗ Failed to create/update Procore user: {response.status_code} {response.text}")
+
+    @staticmethod
+    def sync_procore_suppliers():
+        print("ok")
+        url = f"{ProcoreAPI.BASE_URL}/rest/v1.0/vendors?company_id={ProcoreAPI.COMPANY_ID}"
+        response = requests.get(url, headers=ProcoreAPI._headers())
+        if response.status_code in [200, 201]:
+            procore_vendors = response.json()
+            # print(procore_vendors)
+        else:
+            frappe.throw(f"❗ Failed to fetch Procore Vendors {response.text}")
+
+        rrcl_suppliers = frappe.db.get_list('RRCL Supplier', filters={
+            'procore_vendor_id': ['in', ['', None]]
+        })
+        for rrcl_supplier in rrcl_suppliers:
+            supplier_doc = frappe.get_doc('RRCL Supplier', rrcl_supplier.name)
+
+            # Prepare payload for Procore
+            payload = {
+                "company_id": ProcoreAPI.COMPANY_ID,
+                "vendor": {
+                    "name": supplier_doc.supplier_name,
+                    "address" : f"{supplier_doc.physical_address_1}\n{supplier_doc.physical_address_2}\n{supplier_doc.physical_address_3}",
+                    # "email": supplier_doc.email_id or "",
+                    "business_phone": supplier_doc.phone_1 or "",
+                    "license_number" : supplier_doc.brn
+                    # Add other fields as needed
+                }
+            }
+
+            url = f"{ProcoreAPI.BASE_URL}/rest/v1.0/vendors"
+            response = requests.post(url, headers=ProcoreAPI._headers(), json=payload)
+
+            if response.status_code in [200, 201]:
+                procore_vendor = response.json()
+                vendor_id = procore_vendor.get("id")
+                if vendor_id:
+                    supplier_doc.procore_vendor_id = vendor_id
+                    supplier_doc.procore_data = procore_vendor
+                    supplier_doc.save()
+                    frappe.db.commit()
+                    print(f"Supplier {supplier_doc.supplier_name} synced with Procore ID {vendor_id}")
+            else:
+                frappe.throw(f"❗ Failed to push {supplier_doc.supplier_name} to Procore: {response.text}")
+
+        print(rrcl_suppliers)
+
 
 @frappe.whitelist(allow_guest=True)
 def receive_procore_webhook():

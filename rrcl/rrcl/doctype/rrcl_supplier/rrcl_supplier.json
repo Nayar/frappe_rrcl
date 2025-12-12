@@ -12,6 +12,8 @@
   "phone_1",
   "procore_id_column",
   "procore_vendor_id",
+  "tax_number",
+  "procore_data",
   "section_break_nncf",
   "physical_address_1",
   "physical_address_2",
@@ -76,12 +78,23 @@
    "label": "Supplier Name",
    "reqd": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "tax_number",
+   "fieldtype": "Data",
+   "label": "Tax Number"
+  },
+  {
+   "fieldname": "procore_data",
+   "fieldtype": "JSON",
+   "label": "Procore Data",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-12 09:28:10.899540",
+ "modified": "2025-12-12 09:52:41.655506",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Supplier",
