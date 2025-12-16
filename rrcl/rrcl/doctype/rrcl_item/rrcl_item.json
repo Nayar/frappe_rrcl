@@ -14,7 +14,10 @@
   "allow_in_purchase_requisition",
   "uom",
   "unit_price",
-  "category"
+  "category",
+  "column_break_cvts",
+  "procore_catalogue_id",
+  "procore_data"
  ],
  "fields": [
   {
@@ -69,12 +72,27 @@
   {
    "fieldname": "unit_price",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Unit Price"
+  },
+  {
+   "fieldname": "column_break_cvts",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "procore_catalogue_id",
+   "fieldtype": "Data",
+   "label": "Procore Catalogue ID"
+  },
+  {
+   "fieldname": "procore_data",
+   "fieldtype": "JSON",
+   "label": "Procore Data"
   }
  ],
  "grid_page_length": 50,
  "links": [],
- "modified": "2025-12-08 14:41:46.543412",
+ "modified": "2025-12-16 14:29:31.475790",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Item",

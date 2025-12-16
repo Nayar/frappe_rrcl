@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "creation": "2025-11-24 14:42:08.285912",
  "doctype": "DocType",
@@ -34,6 +35,7 @@
    "read_only": 1
   },
   {
+   "default": "0",
    "fieldname": "is_group",
    "fieldtype": "Check",
    "label": "Is Group"
@@ -56,7 +58,7 @@
  "index_web_pages_for_search": 1,
  "is_tree": 1,
  "links": [],
- "modified": "2025-11-24 14:42:08.285912",
+ "modified": "2025-12-16 14:35:33.649253",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Item Category",
