@@ -1,19 +1,6 @@
 [
  {
   "amended_from": null,
-  "default_procurement_officer": null,
-  "docstatus": 0,
-  "doctype": "RRCL Work Site",
-  "geolocation_azdf": null,
-  "modified": "2025-11-19 15:06:13.757217",
-  "name": "Valriche V27",
-  "site_manager": null,
-  "site_name": "Valriche V27",
-  "store_manager": null,
-  "warehouse": null
- },
- {
-  "amended_from": null,
   "default_procurement_officer": "",
   "docstatus": 0,
   "doctype": "RRCL Work Site",
@@ -83,11 +70,50 @@
   "docstatus": 0,
   "doctype": "RRCL Work Site",
   "geolocation_azdf": null,
+  "modified": "2025-12-16 11:30:47.206636",
+  "name": "Residence Floreal",
+  "site_manager": null,
+  "site_name": "Residence Floreal",
+  "store_manager": null,
+  "warehouse": null
+ },
+ {
+  "amended_from": null,
+  "default_procurement_officer": null,
+  "docstatus": 0,
+  "doctype": "RRCL Work Site",
+  "geolocation_azdf": null,
+  "modified": "2025-11-19 15:06:13.757217",
+  "name": "Valriche V27",
+  "site_manager": null,
+  "site_name": "Valriche V27",
+  "store_manager": null,
+  "warehouse": null
+ },
+ {
+  "amended_from": null,
+  "default_procurement_officer": null,
+  "docstatus": 0,
+  "doctype": "RRCL Work Site",
+  "geolocation_azdf": null,
   "modified": "2025-11-25 01:25:12.092970",
   "name": "Anahita H47",
   "site_manager": "A100",
   "site_name": "Anahita H47",
   "store_manager": "A786",
+  "warehouse": null
+ },
+ {
+  "amended_from": null,
+  "default_procurement_officer": null,
+  "docstatus": 0,
+  "doctype": "RRCL Work Site",
+  "geolocation_azdf": null,
+  "modified": "2025-12-16 11:18:06.780776",
+  "name": "Head Office",
+  "site_manager": null,
+  "site_name": "Head Office",
+  "store_manager": null,
   "warehouse": null
  }
 ]
