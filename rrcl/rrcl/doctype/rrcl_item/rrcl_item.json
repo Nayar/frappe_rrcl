@@ -54,6 +54,8 @@
    "default": "1",
    "fieldname": "allow_in_purchase_requisition",
    "fieldtype": "Check",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Allow in Purchase Requisition"
   },
   {
@@ -92,7 +94,7 @@
  ],
  "grid_page_length": 50,
  "links": [],
- "modified": "2025-12-16 14:29:31.475790",
+ "modified": "2025-12-16 16:20:19.355265",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Item",
