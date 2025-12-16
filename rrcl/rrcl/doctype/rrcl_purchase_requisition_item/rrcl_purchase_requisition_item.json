@@ -31,6 +31,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Item",
+   "link_filters": "[[\"RRCL Item\",\"allow_in_purchase_requisition\",\"=\",1]]",
    "options": "RRCL Item",
    "reqd": 1
   },
@@ -89,7 +90,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-12-10 10:24:40.400534",
+ "modified": "2025-12-16 14:21:28.625744",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Purchase Requisition Item",

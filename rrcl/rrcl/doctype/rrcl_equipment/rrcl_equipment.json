@@ -1,11 +1,13 @@
 {
  "actions": [],
  "allow_events_in_timeline": 1,
+ "allow_import": 1,
  "allow_rename": 1,
  "creation": "2025-12-16 11:00:41.296122",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "item_category",
   "equipment_name",
   "serial_number",
   "assigned_type",
@@ -39,12 +41,19 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Serial Number"
+  },
+  {
+   "fieldname": "item_category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Category",
+   "options": "RRCL Item Category"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-16 11:27:00.832845",
+ "modified": "2025-12-16 11:50:29.539533",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Equipment",

@@ -2,58 +2,67 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "creation": "2025-12-02 13:28:27.196681",
+ "creation": "2025-12-16 12:02:13.229717",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "section_break_gcpa",
+  "amended_from",
+  "employee",
+  "column_break_fokd",
   "date",
-  "link_tqbn",
-  "status",
-  "is_validated",
-  "remarks",
-  "work_site"
+  "time",
+  "work_site",
+  "device_serial_number"
  ],
  "fields": [
   {
-   "fieldname": "date",
-   "fieldtype": "Date",
-   "in_list_view": 1,
-   "in_preview": 1,
-   "in_standard_filter": 1,
-   "label": "Date",
-   "reqd": 1
+   "fieldname": "section_break_gcpa",
+   "fieldtype": "Section Break"
   },
   {
-   "fieldname": "link_tqbn",
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "RRCL Attendance Record",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "employee",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Employee",
    "options": "RRCL Employee",
    "reqd": 1
   },
   {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "in_filter": 1,
+   "fieldname": "column_break_fokd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
    "in_list_view": 1,
-   "in_preview": 1,
    "in_standard_filter": 1,
-   "label": "Status",
-   "options": "working\nlocal\nhalf.local\nsick\nunauthorised\nnotworking\ninjury\ncompassion",
+   "label": "Date",
    "reqd": 1
   },
   {
-   "default": "0",
-   "fieldname": "is_validated",
-   "fieldtype": "Check",
-   "label": "Is Validated"
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Time",
+   "reqd": 1
   },
   {
-   "fieldname": "remarks",
+   "fieldname": "device_serial_number",
    "fieldtype": "Data",
-   "label": "Remarks"
+   "label": "Device Serial Number",
+   "read_only": 1
   },
   {
    "fieldname": "work_site",
@@ -64,11 +73,12 @@
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2025-12-16 12:01:15.729563",
+ "modified": "2025-12-16 12:07:12.976304",
  "modified_by": "Administrator",
  "module": "RRCL",
- "name": "RRCL Attendance Status",
+ "name": "RRCL Attendance Record",
  "owner": "Administrator",
  "permissions": [
   {
@@ -81,6 +91,7 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],
