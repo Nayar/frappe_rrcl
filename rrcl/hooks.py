@@ -296,9 +296,9 @@ fixtures = [
         "filters": [],
         "overwrite": 1
     },
-    { 
-        "doctype": "Report", 
-        "filters" : [[ "module", "=",  'rrcl'  ]],
-        "overwrite": 1,
-    },
+    # { 
+    #     "doctype": "Report", 
+    #     "filters" : [[ "module", "=",  'rrcl'  ]],
+    #     "overwrite": 1,
+    # },
 ]
