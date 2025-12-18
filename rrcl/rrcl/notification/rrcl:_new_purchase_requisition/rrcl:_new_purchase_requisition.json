@@ -9,20 +9,20 @@
  "doctype": "Notification",
  "document_type": "RRCL Purchase Requisition",
  "enabled": 1,
- "event": "Save",
+ "event": "Submit",
  "idx": 0,
  "is_standard": 1,
  "message": "<p>Add your message here</p>\n\n<p><a href=\"{{frappe.utils.get_url_to_form(doc.doctype, doc.name)}}\">{{doc.name}}</a></p>\n",
  "message_type": "Markdown",
  "minutes_offset": 0,
- "modified": "2025-11-25 15:46:20.929254",
+ "modified": "2025-12-18 11:06:08.836853",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL: New Purchase Requisition",
  "owner": "Administrator",
  "recipients": [
   {
-   "cc": "njoolfoo@gmail.com"
+   "receiver_by_role": "RRCL Procurement Officer"
   }
  ],
  "send_system_notification": 0,
