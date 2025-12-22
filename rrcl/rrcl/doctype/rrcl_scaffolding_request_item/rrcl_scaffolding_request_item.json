@@ -8,6 +8,7 @@
  "engine": "InnoDB",
  "field_order": [
   "qty",
+  "available_in_store",
   "item",
   "uom",
   "work_description",
@@ -84,13 +85,20 @@
    "in_standard_filter": 1,
    "label": "Fullfilled",
    "read_only": 1
+  },
+  {
+   "fieldname": "available_in_store",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Available in Store",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-12-22 14:00:19.347983",
+ "modified": "2025-12-22 14:07:29.559267",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Scaffolding Request Item",

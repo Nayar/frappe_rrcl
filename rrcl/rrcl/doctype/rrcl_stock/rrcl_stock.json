@@ -7,7 +7,7 @@
  "field_order": [
   "work_site",
   "item",
-  "amount"
+  "qty"
  ],
  "fields": [
   {
@@ -29,10 +29,10 @@
    "reqd": 1
   },
   {
-   "fieldname": "amount",
+   "fieldname": "qty",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Amount",
+   "label": "Qty",
    "non_negative": 1,
    "reqd": 1
   }
@@ -40,7 +40,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-22 13:15:44.185936",
+ "modified": "2025-12-22 14:23:05.757444",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Stock",
