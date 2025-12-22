@@ -1,10 +1,5 @@
 frappe.ui.form.on("RRCL Purchase Requisition", {
   setup: async function(frm) {
-        // get employee linked to current user
-        if (!frappe.user.has_role("RRCL Store Manager")) {
-            return;
-        }
-
         const r = await frappe.db.get_value(
             "RRCL Employee",
             { user: frappe.session.user },
@@ -12,6 +7,16 @@ frappe.ui.form.on("RRCL Purchase Requisition", {
         );
 
         const employee = r?.message?.name;
+        if (!employee) return;
+        
+        if (!frm.doc.generated_by) {
+          frm.set_value('generated_by', employee);
+        }
+
+        // get employee linked to current user
+        if (!frappe.user.has_role("RRCL Store Manager")) {
+            return;
+        }
 
         frm.set_query("work_site", () => {
             return {
