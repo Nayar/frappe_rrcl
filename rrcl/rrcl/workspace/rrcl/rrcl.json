@@ -1,7 +1,7 @@
 {
  "app": "rrcl",
  "charts": [],
- "content": "[{\"id\":\"SbLdilW2pn\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">RRCL</span>\",\"col\":12}},{\"id\":\"k_0qSVEZjR\",\"type\":\"card\",\"data\":{\"card_name\":\"Inventory\",\"col\":4}},{\"id\":\"fvKQpTxOxE\",\"type\":\"card\",\"data\":{\"card_name\":\"HR\",\"col\":4}},{\"id\":\"U9wJ5AIbYm\",\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}}]",
+ "content": "[{\"id\":\"SbLdilW2pn\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">RRCL</span>\",\"col\":12}},{\"id\":\"k_0qSVEZjR\",\"type\":\"card\",\"data\":{\"card_name\":\"Inventory\",\"col\":4}},{\"id\":\"fvKQpTxOxE\",\"type\":\"card\",\"data\":{\"card_name\":\"HR\",\"col\":4}},{\"id\":\"U9wJ5AIbYm\",\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}},{\"id\":\"MfDNx0Lm1U\",\"type\":\"card\",\"data\":{\"card_name\":\"Finance\",\"col\":4}}]",
  "creation": "2025-11-24 23:58:44.822764",
  "custom_blocks": [],
  "docstatus": 0,
@@ -77,7 +77,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Inventory",
-   "link_count": 12,
+   "link_count": 13,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -98,6 +98,16 @@
    "label": "RRCL Stock Entry",
    "link_count": 0,
    "link_to": "RRCL Stock Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "RRCL Stock",
+   "link_count": 0,
+   "link_to": "RRCL Stock",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -201,9 +211,38 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Finance",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "RRCL Cashflow",
+   "link_count": 0,
+   "link_to": "RRCL Cashflow",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "RRCL Expected Cashflow",
+   "link_count": 0,
+   "link_to": "RRCL Expected Cashflow",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-12-22 12:24:07.800407",
+ "modified": "2025-12-22 15:27:39.654780",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL",
