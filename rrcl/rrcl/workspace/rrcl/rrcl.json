@@ -37,8 +37,47 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "HR",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "RRCL Employee",
+   "link_count": 0,
+   "link_to": "RRCL Employee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "RRCL Attendance Status",
+   "link_count": 0,
+   "link_to": "RRCL Attendance Status",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "RRCL Attendance Record",
+   "link_count": 0,
+   "link_to": "RRCL Attendance Record",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "Inventory",
-   "link_count": 11,
+   "link_count": 12,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -116,6 +155,16 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "RRCL Scaffolding Calculations",
+   "link_count": 0,
+   "link_to": "RRCL Scaffolding Calculations",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "RRCL Work Site",
    "link_count": 0,
    "link_to": "RRCL Work Site",
@@ -152,48 +201,9 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "HR",
-   "link_count": 3,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "RRCL Employee",
-   "link_count": 0,
-   "link_to": "RRCL Employee",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "RRCL Attendance Status",
-   "link_count": 0,
-   "link_to": "RRCL Attendance Status",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "RRCL Attendance Record",
-   "link_count": 0,
-   "link_to": "RRCL Attendance Record",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
   }
  ],
- "modified": "2025-12-16 12:08:24.563128",
+ "modified": "2025-12-22 12:24:07.800407",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL",
