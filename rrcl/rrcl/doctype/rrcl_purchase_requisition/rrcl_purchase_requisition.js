@@ -1,6 +1,10 @@
 frappe.ui.form.on("RRCL Purchase Requisition", {
   setup: async function(frm) {
         // get employee linked to current user
+        if (!frappe.user.has_role("RRCL Store Manager")) {
+            return;
+        }
+
         const r = await frappe.db.get_value(
             "RRCL Employee",
             { user: frappe.session.user },
