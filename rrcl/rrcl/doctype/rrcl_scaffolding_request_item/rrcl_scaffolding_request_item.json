@@ -12,7 +12,6 @@
   "item",
   "uom",
   "work_description",
-  "construction_phase",
   "required_by",
   "delivered",
   "fulfilled"
@@ -54,15 +53,6 @@
    "label": "Work Description"
   },
   {
-   "fieldname": "construction_phase",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Construction Phase",
-   "options": "RRCL Construction Phase",
-   "reqd": 1
-  },
-  {
    "fieldname": "required_by",
    "fieldtype": "Date",
    "in_list_view": 1,
@@ -98,7 +88,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-12-22 14:07:29.559267",
+ "modified": "2025-12-22 14:46:20.074998",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Scaffolding Request Item",
