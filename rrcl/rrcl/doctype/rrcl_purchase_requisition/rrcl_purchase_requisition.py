@@ -3,6 +3,8 @@
 
 # import frappe
 from frappe.model.document import Document
+import frappe
+from datetime import datetime
 
 
 class RRCLPurchaseRequisition(Document):
@@ -25,3 +27,26 @@ class RRCLPurchaseRequisition(Document):
 	# end: auto-generated types
 
 	pass
+
+	def before_submit(self):
+		self.validate_allowed_day()
+
+	def validate_allowed_day(self):
+		# Fetch setting
+		allowed_day = frappe.db.get_single_value(
+			"RRCL Settings",
+			"allow_pr_on_date"
+		)
+
+		# If not set or set to All, allow submission
+		if not allowed_day or allowed_day == "All":
+			return
+
+		# Get today's weekday (e.g. Monday)
+		today = datetime.today().strftime("%A")
+
+		if today != allowed_day:
+			frappe.throw(
+				f"Purchase Requisition submission is only allowed on **{allowed_day}**. "
+				f"Today is **{today}**."
+			)
