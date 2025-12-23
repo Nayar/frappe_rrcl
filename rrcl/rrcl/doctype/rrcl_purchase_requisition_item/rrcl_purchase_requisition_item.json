@@ -82,7 +82,6 @@
    "fieldtype": "Read Only",
    "in_list_view": 1,
    "label": "UOM",
-   "length": 4,
    "options": "item.uom"
   }
  ],
@@ -90,7 +89,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-12-18 15:30:36.177569",
+ "modified": "2025-12-23 11:37:19.230662",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Purchase Requisition Item",
