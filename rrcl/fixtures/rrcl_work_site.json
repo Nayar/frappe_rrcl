@@ -18,11 +18,11 @@
   "docstatus": 0,
   "doctype": "RRCL Work Site",
   "geolocation_azdf": null,
-  "modified": "2025-11-25 01:26:59.883319",
+  "modified": "2026-01-07 17:15:18.886510",
   "name": "The Summit",
   "site_manager": "",
   "site_name": "The Summit",
-  "store_manager": "A783",
+  "store_manager": "",
   "warehouse": null
  },
  {
@@ -53,15 +53,15 @@
  },
  {
   "amended_from": null,
-  "default_procurement_officer": null,
+  "default_procurement_officer": "A127",
   "docstatus": 0,
   "doctype": "RRCL Work Site",
   "geolocation_azdf": null,
-  "modified": "2025-12-16 11:30:47.206636",
+  "modified": "2026-01-07 17:16:27.223939",
   "name": "Residence Floreal",
-  "site_manager": null,
+  "site_manager": "A767",
   "site_name": "Residence Floreal",
-  "store_manager": null,
+  "store_manager": "A783",
   "warehouse": null
  },
  {
