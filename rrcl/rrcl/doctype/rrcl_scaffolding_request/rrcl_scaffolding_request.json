@@ -14,7 +14,7 @@
   "perimeter",
   "height",
   "calculate",
-  "rental_per_day",
+  "rental_per_week",
   "section_break_cfdk",
   "table_yngh"
  ],
@@ -79,9 +79,9 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "rental_per_day",
+   "fieldname": "rental_per_week",
    "fieldtype": "Int",
-   "label": "Rental Per Day",
+   "label": "Rental Per Week",
    "read_only": 1
   }
  ],
@@ -89,7 +89,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-01-09 14:49:21.831329",
+ "modified": "2026-01-09 16:22:07.013980",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Scaffolding Request",

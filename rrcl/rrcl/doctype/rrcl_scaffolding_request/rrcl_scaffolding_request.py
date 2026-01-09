@@ -7,12 +7,12 @@ from frappe.model.document import Document
 
 class RRCLScaffoldingRequest(Document):
 	def before_save(self):
-		self.rental_per_day = 0
+		self.rental_per_week = 0
 		# Iterate through the child table rows (table_yngh)
 		for row in self.table_yngh:
 			print(row.item)
 			try:
-				self.rental_per_day += float(row.qty * float(frappe.get_doc("RRCL Item",row.item).rental_price))
+				self.rental_per_week += float(row.qty * float(frappe.get_doc("RRCL Item",row.item).rental_price)) * 7
 			except:
 				pass
 			stock_details = frappe.get_all(
