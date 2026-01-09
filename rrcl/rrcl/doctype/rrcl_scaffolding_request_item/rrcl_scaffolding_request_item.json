@@ -43,6 +43,7 @@
   {
    "fieldname": "available_in_store",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Available in Store",
    "read_only": 1
   },
@@ -58,7 +59,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-01-09 15:08:38.140852",
+ "modified": "2026-01-09 15:20:03.513123",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Scaffolding Request Item",
