@@ -11,7 +11,8 @@
   "item",
   "work_description",
   "rental_per_day",
-  "available_in_store"
+  "available_in_store",
+  "calculations"
  ],
  "fields": [
   {
@@ -36,8 +37,6 @@
   {
    "fieldname": "work_description",
    "fieldtype": "Small Text",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
    "label": "Work Description"
   },
   {
@@ -53,13 +52,21 @@
    "fieldtype": "Read Only",
    "in_list_view": 1,
    "label": "Unit Rental Per Day"
+  },
+  {
+   "fieldname": "calculations",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Calculations",
+   "options": "RRCL Scaffolding Calculations",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-01-09 15:20:03.513123",
+ "modified": "2026-01-09 15:30:07.569659",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Scaffolding Request Item",
