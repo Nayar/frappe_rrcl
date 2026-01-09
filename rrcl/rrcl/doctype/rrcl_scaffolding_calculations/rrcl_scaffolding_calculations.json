@@ -1,11 +1,11 @@
 {
  "actions": [],
- "allow_rename": 1,
  "creation": "2025-12-05 13:38:59.247160",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "item",
+  "item_name",
   "formula",
   "type"
  ],
@@ -32,12 +32,18 @@
    "in_standard_filter": 1,
    "label": "Type",
    "options": "Kwikstage\nRinglock"
+  },
+  {
+   "fetch_from": "item.rrcl_name",
+   "fieldname": "item_name",
+   "fieldtype": "Read Only",
+   "label": "Item Name"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-09 14:28:38.455811",
+ "modified": "2026-01-09 17:12:31.634784",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Scaffolding Calculations",
@@ -58,7 +64,9 @@
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "item_name"
 }
