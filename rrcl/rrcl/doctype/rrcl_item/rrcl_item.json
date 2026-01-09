@@ -14,6 +14,7 @@
   "allow_in_purchase_requisition",
   "uom",
   "unit_price",
+  "rental_price",
   "category",
   "column_break_cvts",
   "procore_catalogue_id",
@@ -90,11 +91,17 @@
    "fieldname": "procore_data",
    "fieldtype": "JSON",
    "label": "Procore Data"
+  },
+  {
+   "fieldname": "rental_price",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Rental Price"
   }
  ],
  "grid_page_length": 50,
  "links": [],
- "modified": "2025-12-16 16:20:19.355265",
+ "modified": "2026-01-09 14:46:33.073473",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Item",
