@@ -270,6 +270,11 @@ fixtures = [
         "filters" : [["name", "=", "RRCL Purchase Requisition"]]
     },
     {
+        "doctype": "Workflow Action Master", 
+        "filters": [],
+        "overwrite": 1
+    },
+    {
         "doctype": "Workflow State", 
         "filters": [],
         "overwrite": 1
