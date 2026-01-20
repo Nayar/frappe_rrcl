@@ -87,12 +87,14 @@
   {
    "fieldname": "date_joined",
    "fieldtype": "Date",
-   "label": "Date Joined"
+   "label": "Date Joined",
+   "permlevel": 1
   },
   {
    "fieldname": "date_left",
    "fieldtype": "Date",
-   "label": "Date Left"
+   "label": "Date Left",
+   "permlevel": 1
   },
   {
    "fieldname": "nationality",
@@ -120,7 +122,8 @@
   {
    "fieldname": "date_of_birth",
    "fieldtype": "Date",
-   "label": "Date of Birth"
+   "label": "Date of Birth",
+   "permlevel": 1
   },
   {
    "fieldname": "phone",
@@ -142,7 +145,8 @@
   {
    "fieldname": "nic",
    "fieldtype": "Data",
-   "label": "NIC"
+   "label": "NIC",
+   "permlevel": 1
   },
   {
    "fieldname": "email",
@@ -165,7 +169,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-08 09:44:33.880831",
+ "modified": "2026-01-20 11:03:47.973024",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Employee",
