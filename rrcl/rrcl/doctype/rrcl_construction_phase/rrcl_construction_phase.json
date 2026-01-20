@@ -24,13 +24,14 @@
   {
    "fieldname": "description",
    "fieldtype": "Data",
+   "in_preview": 1,
    "label": "Description"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-21 14:16:46.956732",
+ "modified": "2026-01-20 10:53:42.841883",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Construction Phase",
@@ -52,6 +53,7 @@
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
+ "show_preview_popup": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": [],
