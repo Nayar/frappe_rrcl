@@ -107,7 +107,8 @@
    "fieldname": "attendance_type",
    "fieldtype": "Select",
    "label": "Attendance Type",
-   "options": "Digital\nManual\nAssumed"
+   "options": "Digital\nManual\nAssumed",
+   "permlevel": 1
   },
   {
    "fieldname": "department",
@@ -169,7 +170,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-20 11:03:47.973024",
+ "modified": "2026-01-20 11:18:01.370337",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Employee",
