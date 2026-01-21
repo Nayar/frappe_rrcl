@@ -62,3 +62,4 @@ class RRCLTimesheet(Document):
 		self.table_employees = []
 		for data in summary.values():
 			self.append("table_employees", data)
+		self.save()
