@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-22 00:19:17.515160",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_nirz",
+  "amended_from",
+  "date",
+  "work_site",
+  "parent_timesheet",
+  "table_employees"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_nirz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "RRCL Site Timesheet",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "work_site",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Work Site",
+   "options": "RRCL Work Site",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "table_employees",
+   "fieldtype": "Table",
+   "options": "RRCL Site Timesheet Details"
+  },
+  {
+   "fieldname": "parent_timesheet",
+   "fieldtype": "Link",
+   "label": "Parent Timesheet",
+   "options": "RRCL Timesheet",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-01-22 01:25:02.385121",
+ "modified_by": "Administrator",
+ "module": "RRCL",
+ "name": "RRCL Site Timesheet",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
