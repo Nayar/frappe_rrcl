@@ -182,8 +182,13 @@
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2026-01-22 00:06:17.176300",
+ "links": [
+  {
+   "link_doctype": "RRCL Equipment",
+   "link_fieldname": "assigned_to"
+  }
+ ],
+ "modified": "2026-01-22 01:32:16.163564",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Employee",

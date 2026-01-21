@@ -78,3 +78,49 @@ class RRCLTimesheet(Document):
 		for data in summary.values():
 			self.append("table_employees", data)
 		self.save()
+		self.generate_site_timesheets()
+
+	def generate_site_timesheets(self):
+		work_sites = frappe.get_all(
+			"RRCL Work Site",
+			fields=["name"]
+		)
+		
+		for site in work_sites:
+			# 1. Define the search criteria
+			filters = {
+				"work_site": site.name,
+				"date": self.date
+			}
+			
+			# 2. Check if it exists
+			existing_name = frappe.db.exists("RRCL Site Timesheet", filters)
+
+			if not existing_name:
+				# Create new doc object
+				site_timesheet = frappe.get_doc({
+					"doctype": "RRCL Site Timesheet",
+					"parent_timesheet": self.name,
+					**filters # Unpacks work_site and date into the dict
+				})
+				site_timesheet.insert(ignore_permissions=True)
+			else:
+				# Fetch existing doc object
+				site_timesheet = frappe.get_doc("RRCL Site Timesheet", existing_name)
+
+			# 3. Update the Child Table
+			site_timesheet.set("table_employees", []) # Clear existing rows safely
+			
+			for row in self.table_employees:
+				# Logic Note: You might want an 'if row.site == site.name:' filter here
+				site_timesheet.append("table_employees", {
+					"employee": row.employee,
+					"status": row.status,
+					"time_in": row.time_in,
+					"time_out": row.time_out
+				})
+
+			# 4. Save the changes (updates existing or newly inserted doc)
+			site_timesheet.save(ignore_permissions=True)
+		
+		frappe.db.commit() # Ensure changes are written if running from a custom button
