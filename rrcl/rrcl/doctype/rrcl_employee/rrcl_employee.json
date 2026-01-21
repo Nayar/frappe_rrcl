@@ -35,6 +35,8 @@
   "section_break_bwhq",
   "date_joined",
   "date_left",
+  "column_break_ueiy",
+  "default_worksite",
   "department"
  ],
  "fields": [
@@ -166,12 +168,22 @@
    "fieldname": "is_mauritian",
    "fieldtype": "Check",
    "label": "Is Mauritian"
+  },
+  {
+   "fieldname": "default_worksite",
+   "fieldtype": "Link",
+   "label": "Default Worksite",
+   "options": "RRCL Work Site"
+  },
+  {
+   "fieldname": "column_break_ueiy",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-20 13:40:39.315740",
+ "modified": "2026-01-21 11:02:12.976595",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Employee",
