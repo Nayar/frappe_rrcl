@@ -6,6 +6,15 @@
 
 // 	},
 // });
+
+frappe.ui.form.on('RRCL Employee Overtime', {
+    update_times: function(frm) {
+        update_child_table_times(frm, 'overtime_start', frm.doc.default_overtime_start);
+        update_child_table_times(frm, 'overtime_end',   frm.doc.default_overtime_end);
+        update_child_table_times(frm, 'overtime_hrs',   frm.doc.default_overtime_hrs);
+    }
+});
+
 frappe.ui.form.on('RRCL Employee Overtime Item', { // Replace with your actual child table DocType name
     table_wiyb_add: function(frm, cdt, cdn) {
         let row = frappe.get_doc(cdt, cdn);
@@ -20,3 +29,12 @@ frappe.ui.form.on('RRCL Employee Overtime Item', { // Replace with your actual c
         }
     }
 });
+
+function update_child_table_times(frm, field_name, value) {
+    if (frm.doc.table_wiyb && value) { // Replace 'employees' with your actual table fieldname
+        frm.doc.table_wiyb.forEach(row => {
+            frappe.model.set_value(row.doctype, row.name, field_name, value);
+        });
+        frm.refresh_field('employees');
+    }
+}

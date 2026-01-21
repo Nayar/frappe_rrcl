@@ -11,6 +11,7 @@
   "default_overtime_start",
   "default_overtime_end",
   "default_overtime_hrs",
+  "update_times",
   "section_break_syth",
   "table_wiyb",
   "generated_by",
@@ -74,12 +75,17 @@
    "fieldtype": "Float",
    "label": "Default Overtime Hrs",
    "precision": "2"
+  },
+  {
+   "fieldname": "update_times",
+   "fieldtype": "Button",
+   "label": "Update Times"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-21 11:17:29.659326",
+ "modified": "2026-01-21 11:30:38.500170",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Employee Overtime",
