@@ -1,13 +1,13 @@
 // Copyright (c) 2026, LEFINTECH LTD and contributors
 // For license information, please see license.txt
 
-// frappe.ui.form.on("RRCL Employee Overtime", {
+// frappe.ui.form.on("RRCL Employee Overtime Timesheet", {
 // 	refresh(frm) {
 
 // 	},
 // });
 
-frappe.ui.form.on('RRCL Employee Overtime', {
+frappe.ui.form.on('RRCL Employee Overtime Timesheet', {
     update_times: function(frm) {
         update_child_table_times(frm, 'overtime_start', frm.doc.default_overtime_start);
         update_child_table_times(frm, 'overtime_end',   frm.doc.default_overtime_end);
@@ -15,7 +15,7 @@ frappe.ui.form.on('RRCL Employee Overtime', {
     }
 });
 
-frappe.ui.form.on('RRCL Employee Overtime Item', { // Replace with your actual child table DocType name
+frappe.ui.form.on('RRCL Employee Overtime Timesheet Details', { // Replace with your actual child table DocType name
     table_wiyb_add: function(frm, cdt, cdn) {
         let row = frappe.get_doc(cdt, cdn);
         if (frm.doc.default_overtime_start) {

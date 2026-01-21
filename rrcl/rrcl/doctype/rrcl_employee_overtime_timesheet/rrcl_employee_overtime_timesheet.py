@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class RRCLEmployeeOvertimeItem(Document):
+class RRCLEmployeeOvertimeTimesheet(Document):
 	pass

@@ -52,7 +52,7 @@
  "modified": "2026-01-21 10:31:27.642001",
  "modified_by": "Administrator",
  "module": "RRCL",
- "name": "RRCL Employee Overtime Item",
+ "name": "RRCL Employee Overtime Timesheet Details",
  "owner": "Administrator",
  "permissions": [],
  "row_format": "Dynamic",

@@ -38,7 +38,7 @@
   {
    "fieldname": "table_wiyb",
    "fieldtype": "Table",
-   "options": "RRCL Employee Overtime Item"
+   "options": "RRCL Employee Overtime Timesheet Details"
   },
   {
    "fieldname": "generated_by",
@@ -85,10 +85,10 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-21 11:30:38.500170",
+ "modified": "2026-01-21 11:42:16.190393",
  "modified_by": "Administrator",
  "module": "RRCL",
- "name": "RRCL Employee Overtime",
+ "name": "RRCL Employee Overtime Timesheet",
  "owner": "Administrator",
  "permissions": [
   {

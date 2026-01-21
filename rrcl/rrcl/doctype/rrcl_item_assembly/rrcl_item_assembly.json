@@ -1,0 +1,149 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-10 00:02:58.545348",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "uom",
+  "column_break_egxw",
+  "fixed_cost",
+  "unit_price",
+  "estimated_duration",
+  "section_break_dtnl",
+  "input1",
+  "column_break_rpay",
+  "fixed_cost_for_input",
+  "variable_cost_for_input",
+  "estimated_duration_for_input",
+  "section_break_ideq",
+  "fixed_cost_formula",
+  "variable_cost_formula",
+  "estimated_duration_formula",
+  "section_break_hnoc",
+  "table_eccy"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "table_eccy",
+   "fieldtype": "Table",
+   "options": "RRCL Item Assembly Item"
+  },
+  {
+   "fieldname": "unit_price",
+   "fieldtype": "Currency",
+   "label": "Variable Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Data",
+   "label": "UOM"
+  },
+  {
+   "fieldname": "fixed_cost",
+   "fieldtype": "Currency",
+   "label": "Fixed Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "variable_cost_formula",
+   "fieldtype": "Code",
+   "label": "Variable Cost Formula",
+   "max_height": "100px"
+  },
+  {
+   "fieldname": "fixed_cost_formula",
+   "fieldtype": "Code",
+   "label": "Fixed Cost Formula",
+   "max_height": "100px"
+  },
+  {
+   "fieldname": "column_break_egxw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_hnoc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "estimated_duration",
+   "fieldtype": "Float",
+   "label": "Estimated Duration"
+  },
+  {
+   "fieldname": "estimated_duration_formula",
+   "fieldtype": "Code",
+   "label": "Estimated Duration Formula",
+   "max_height": "100px"
+  },
+  {
+   "fieldname": "section_break_ideq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_dtnl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "input1",
+   "fieldtype": "Float",
+   "label": "input1"
+  },
+  {
+   "fieldname": "fixed_cost_for_input",
+   "fieldtype": "Currency",
+   "label": "Fixed Cost for input",
+   "read_only": 1
+  },
+  {
+   "fieldname": "variable_cost_for_input",
+   "fieldtype": "Currency",
+   "label": "Variable Cost for input",
+   "read_only": 1
+  },
+  {
+   "fieldname": "estimated_duration_for_input",
+   "fieldtype": "Float",
+   "label": "Estimated Duration for input"
+  },
+  {
+   "fieldname": "column_break_rpay",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-12 14:44:56.932903",
+ "modified_by": "Administrator",
+ "module": "RRCL",
+ "name": "RRCL Item Assembly",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "name1"
+}
