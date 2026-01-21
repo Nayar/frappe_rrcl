@@ -6,6 +6,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "work_site",
   "employee",
   "status",
   "time_in",
@@ -42,16 +43,24 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Status",
    "options": "Working\nLocal Leave\nSick Leave\nUnauthorised Leave\nNot clocked",
    "reqd": 1
+  },
+  {
+   "fieldname": "work_site",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Work Site",
+   "options": "RRCL Work Site"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-01-21 22:47:33.425642",
+ "modified": "2026-01-21 23:39:14.662912",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Timesheet Details",

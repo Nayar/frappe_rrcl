@@ -6,24 +6,46 @@ from frappe.model.document import Document
 from frappe.utils import get_timedelta
 
 class RRCLTimesheet(Document):
+	def validate(self):
+		duplicate = frappe.db.exists("RRCL Timesheet", {
+			"date": self.date,
+			"name": ["!=", self.name]
+		})
+		if duplicate:
+			frappe.throw("A timesheet entry already exists for this date.")
+
 	@frappe.whitelist()
 	def generate_present(self):
-		# self.table_employees = []
+		active_employees = frappe.get_all(
+			"RRCL Employee", 
+			filters={"is_active": 1}, 
+			fields=["name"]
+		)
+
+		summary = {}
+
+		# 2. Initialize the summary with "Not Clocked" status
+		for emp in active_employees:
+			summary[emp.name] = {
+				"employee": emp.name,
+				"status": "Not clocked",
+				"work_site": None,
+				"time_in": None,
+				"time_out": None
+			}
+
 		attendance_records = frappe.get_all(
 			"RRCL Attendance Record",
 			filters={
-				"date": self.date,
-				"work_site": self.work_site
+				"date": self.date
 			},
-			fields=["employee","time","date"] # Add the fields you need
+			fields=["employee","time","date","work_site"] # Add the fields you need
 		)
-
-
-		summary = {}
 
 		# 1. Load existing table into dictionary
 		for row in self.get("table_employees"):
 			summary[row.employee] = {
+				"work_site" : row.work_site,
 				"employee": row.employee,
 				"status": row.status,
 				# Ensure existing values are timedeltas for comparison
@@ -42,20 +64,13 @@ class RRCLTimesheet(Document):
 			if emp_id in summary and summary[emp_id]["status"] in ["Absent", "Local Leave"]:
 				continue
 			
-			if emp_id not in summary:
-				summary[emp_id] = {
-					"employee": emp_id,
-					"status": "Working",
-					"time_in": log_time,
-					"time_out": log_time
-				}
-			else:
-				curr = summary[emp_id]
-				# Now both are timedeltas, so < and > will work
-				if log_time < curr["time_in"]: 
-					curr["time_in"] = log_time
-				if log_time > curr["time_out"]: 
-					curr["time_out"] = log_time
+			summary[emp_id] = {
+				"employee": emp_id,
+				"status": "Working",
+				"work_site": row.work_site,
+				"time_in": log_time,
+				"time_out": log_time
+			}
 
 		# 3. Clear and Rebuild
 		# self.set_value("table_employees", [])
