@@ -1,23 +1,19 @@
 {
  "actions": [],
- "allow_import": 1,
  "allow_rename": 1,
- "creation": "2025-12-16 12:02:13.229717",
+ "creation": "2026-01-21 21:04:37.952802",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_gcpa",
-  "work_site",
-  "date",
+  "section_break_vte0",
   "amended_from",
-  "column_break_fokd",
-  "employee",
-  "time",
-  "device_serial_number"
+  "date",
+  "work_site",
+  "table_employees"
  ],
  "fields": [
   {
-   "fieldname": "section_break_gcpa",
+   "fieldname": "section_break_vte0",
    "fieldtype": "Section Break"
   },
   {
@@ -25,23 +21,10 @@
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "RRCL Attendance Record",
+   "options": "RRCL Timesheet",
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
-  },
-  {
-   "fieldname": "employee",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Employee",
-   "options": "RRCL Employee",
-   "reqd": 1
-  },
-  {
-   "fieldname": "column_break_fokd",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "date",
@@ -52,34 +35,28 @@
    "reqd": 1
   },
   {
-   "fieldname": "time",
-   "fieldtype": "Time",
-   "in_list_view": 1,
-   "label": "Time",
-   "reqd": 1
-  },
-  {
-   "fieldname": "device_serial_number",
-   "fieldtype": "Data",
-   "label": "Device Serial Number",
-   "read_only": 1
-  },
-  {
    "fieldname": "work_site",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Work Site",
    "options": "RRCL Work Site",
    "reqd": 1
+  },
+  {
+   "fieldname": "table_employees",
+   "fieldtype": "Table",
+   "options": "RRCL Timesheet Details"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-01-21 14:55:07.081708",
+ "modified": "2026-01-21 22:09:34.813671",
  "modified_by": "Administrator",
  "module": "RRCL",
- "name": "RRCL Attendance Record",
+ "name": "RRCL Timesheet",
  "owner": "Administrator",
  "permissions": [
   {
@@ -100,6 +77,5 @@
  "rows_threshold_for_grid_search": 20,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": [],
- "track_changes": 1
+ "states": []
 }

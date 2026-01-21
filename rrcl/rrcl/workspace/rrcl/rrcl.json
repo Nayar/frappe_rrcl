@@ -216,7 +216,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "HR",
-   "link_count": 4,
+   "link_count": 5,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -256,13 +256,23 @@
    "is_query_report": 0,
    "label": "RRCL Employee Overtime",
    "link_count": 0,
-   "link_to": "RRCL Employee Overtime",
+   "link_to": "RRCL Employee Overtime Timesheet",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "RRCL HIK Vision Attendance Upload",
+   "link_count": 0,
+   "link_to": "RRCL HIK Vision Attendance Upload",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
   }
  ],
- "modified": "2026-01-21 10:56:18.113303",
+ "modified": "2026-01-21 13:58:29.834459",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL",
