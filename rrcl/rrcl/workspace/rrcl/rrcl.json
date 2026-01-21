@@ -18,45 +18,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "HR",
-   "link_count": 3,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "RRCL Employee",
-   "link_count": 0,
-   "link_to": "RRCL Employee",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "RRCL Attendance Status",
-   "link_count": 0,
-   "link_to": "RRCL Attendance Status",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "RRCL Attendance Record",
-   "link_count": 0,
-   "link_to": "RRCL Attendance Record",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Inventory",
    "link_count": 13,
    "link_type": "DocType",
@@ -250,9 +211,58 @@
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "HR",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "RRCL Employee",
+   "link_count": 0,
+   "link_to": "RRCL Employee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "RRCL Attendance Status",
+   "link_count": 0,
+   "link_to": "RRCL Attendance Status",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "RRCL Attendance Record",
+   "link_count": 0,
+   "link_to": "RRCL Attendance Record",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "RRCL Employee Overtime",
+   "link_count": 0,
+   "link_to": "RRCL Employee Overtime",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-12-22 16:40:51.037554",
+ "modified": "2026-01-21 10:56:18.113303",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL",
