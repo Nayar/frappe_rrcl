@@ -15,7 +15,8 @@
   "section_break_syth",
   "table_wiyb",
   "generated_by",
-  "approve_by"
+  "approve_by",
+  "amended_from"
  ],
  "fields": [
   {
@@ -80,12 +81,23 @@
    "fieldname": "update_times",
    "fieldtype": "Button",
    "label": "Update Times"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "RRCL Employee Overtime Timesheet",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2026-01-21 11:42:16.190393",
+ "modified": "2026-01-21 12:17:15.376134",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Employee Overtime Timesheet",
@@ -112,6 +124,7 @@
    "report": 1,
    "role": "RRCL Site Manager",
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],
