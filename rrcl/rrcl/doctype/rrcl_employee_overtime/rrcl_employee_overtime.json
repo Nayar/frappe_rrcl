@@ -8,10 +8,9 @@
   "date",
   "work_site",
   "column_break_ssem",
-  "default_overtime_end",
   "default_overtime_start",
+  "default_overtime_end",
   "default_overtime_hrs",
-  "fill_all_employees_on_site",
   "section_break_syth",
   "table_wiyb",
   "generated_by",
@@ -53,11 +52,6 @@
    "options": "RRCL Employee"
   },
   {
-   "fieldname": "fill_all_employees_on_site",
-   "fieldtype": "Button",
-   "label": "Fill All Employees on Site"
-  },
-  {
    "fieldname": "default_overtime_start",
    "fieldtype": "Time",
    "label": "Default Overtime Start"
@@ -85,7 +79,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-21 10:55:27.900416",
+ "modified": "2026-01-21 11:17:29.659326",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Employee Overtime",
