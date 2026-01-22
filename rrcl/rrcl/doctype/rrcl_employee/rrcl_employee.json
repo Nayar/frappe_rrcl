@@ -186,9 +186,27 @@
   {
    "link_doctype": "RRCL Equipment",
    "link_fieldname": "assigned_to"
+  },
+  {
+   "link_doctype": "RRCL Attendance Record",
+   "link_fieldname": "employee"
+  },
+  {
+   "is_child_table": 1,
+   "link_doctype": "RRCL Timesheet Details",
+   "link_fieldname": "employee",
+   "parent_doctype": "RRCL Timesheet",
+   "table_fieldname": "table_employees"
+  },
+  {
+   "is_child_table": 1,
+   "link_doctype": "RRCL Site Timesheet Details",
+   "link_fieldname": "employee",
+   "parent_doctype": "RRCL Site Timesheet",
+   "table_fieldname": "table_employees"
   }
  ],
- "modified": "2026-01-22 01:32:16.163564",
+ "modified": "2026-01-22 13:35:30.267037",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Employee",
