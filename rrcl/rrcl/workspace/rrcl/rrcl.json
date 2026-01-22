@@ -216,7 +216,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "HR",
-   "link_count": 5,
+   "link_count": 7,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -270,9 +270,29 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "RRCL Timesheet",
+   "link_count": 0,
+   "link_to": "RRCL Timesheet",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "RRCL Site Timesheet",
+   "link_count": 0,
+   "link_to": "RRCL Site Timesheet",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2026-01-21 13:58:29.834459",
+ "modified": "2026-01-22 14:00:50.565959",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL",
