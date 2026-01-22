@@ -26,7 +26,7 @@ class RRCLTimesheet(Document):
 		active_employees = frappe.get_all(
 			"RRCL Employee", 
 			filters={"is_active": 1}, 
-			fields=["name","default_worksite"]
+			fields=["name","default_worksite","attendance_type"]
 		)
 
 		summary = {}
@@ -35,7 +35,7 @@ class RRCLTimesheet(Document):
 		for emp in active_employees:
 			summary[emp.name] = {
 				"employee": emp.name,
-				"status": "Not clocked",
+				"status": "Not clocked" if emp.attendance_type == "Digital" else "Working",
 				"time_in": None,
 				"time_out": None,
 				"work_site": emp.default_worksite
