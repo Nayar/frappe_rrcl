@@ -88,6 +88,7 @@ class RRCLHIKVisionAttendanceUpload(Document):
                     if not frappe.db.exists("RRCL Attendance Record", obj):
                         attendance = frappe.get_doc(obj)
                         attendance.insert(ignore_permissions=True)
+                        attendance.save()
                     else:
                         frappe.msgprint("Record already exists, skipping...")
                     count += 1

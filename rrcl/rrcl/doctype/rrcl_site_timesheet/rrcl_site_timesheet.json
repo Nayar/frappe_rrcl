@@ -9,6 +9,9 @@
   "date",
   "work_site",
   "parent_timesheet",
+  "column_break_oirb",
+  "summary",
+  "section_break_dhso",
   "table_employees"
  ],
  "fields": [
@@ -54,13 +57,27 @@
    "label": "Parent Timesheet",
    "options": "RRCL Timesheet",
    "read_only": 1
+  },
+  {
+   "fieldname": "column_break_oirb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "summary",
+   "fieldtype": "Text",
+   "label": "Summary",
+   "max_height": "200px"
+  },
+  {
+   "fieldname": "section_break_dhso",
+   "fieldtype": "Section Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-01-22 13:09:34.013529",
+ "modified": "2026-01-22 16:14:20.575283",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Site Timesheet",
