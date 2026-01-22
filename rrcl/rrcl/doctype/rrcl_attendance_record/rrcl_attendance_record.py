@@ -1,57 +1,71 @@
-# Copyright (c) 2025, LEFINTECH LTD and contributors
-# For license information, please see license.txt
 
 import frappe
-from frappe.model.document import Document
 
+from frappe.model.document import Document
 
 from frappe.utils import get_time
 
 class RRCLAttendanceRecord(Document):
-    def save(self):
-        # 1. Get or Create Parent Timesheet
-        timesheet_name = self.get_or_create_parent()
-        parent_doc = frappe.get_doc("RRCL Site Timesheet", timesheet_name)
-        
-        # 2. Find if there's an open entry (Working status and no time_out)
-        existing_row = None
-        for row in parent_doc.table_employees:
-            if row.employee == self.employee:
-                existing_row = row
-                break
-        
-        new_time = get_time(self.time)
 
-        if not existing_row:
-            # CREATE NEW: No open record found, so this is a "Clock In"
-            parent_doc.append("table_employees", {
-                "employee": self.employee,
-                "status": "Working",
-                "time_in": self.time
-            })
-            parent_doc.save(ignore_permissions=True)
-            
-        else:
-            # UPDATE EXISTING: Logic for Clock Out
-            time_in = get_time(existing_row.time_in)
-            
-            if new_time > time_in:
-                # Normal Clock Out
-                existing_row.time_out = self.time
-                # Optional: existing_row.status = "Completed" 
-                parent_doc.save(ignore_permissions=True)
-            else:
-                # Edge Case: The time provided is earlier than Time In
-                existing_row.time_in = self.time
-                # Optional: existing_row.status = "Completed" 
-                parent_doc.save(ignore_permissions=True)
-                # frappe.msgprint(f"Error: Time {self.time} is earlier than Time In ({existing_row.time_in})")
+	def after_insert(self):
+		self.update_min_max_time()
+	def update_min_max_time(self):
+		timesheet_name = self.get_or_create_parent()
 
-    def get_or_create_parent(self):
-        filters = {"work_site": self.work_site, "date": self.date}
-        name = frappe.db.exists("RRCL Site Timesheet", filters)
-        if not name:
-            doc = frappe.get_doc({"doctype": "RRCL Site Timesheet", **filters})
-            doc.insert(ignore_permissions=True)
-            return doc.name
-        return name
+		# Get earliest and latest swipe times for this employee/day/site
+		result = frappe.db.sql("""
+			SELECT
+				MIN(time) AS min_time,
+				MAX(time) AS max_time
+			FROM `tabRRCL Attendance Record`
+			WHERE employee = %s
+			AND work_site = %s
+			AND date = %s
+		""", (self.employee, self.work_site, self.date), as_dict=True)[0]
+
+		min_time = result.min_time
+		max_time = result.max_time
+
+		# Get or create child row
+		row_name = frappe.db.get_value(
+			"RRCL Site Timesheet Details",
+			{
+				"parent": timesheet_name,
+				"employee": self.employee
+			},
+			"name"
+		)
+
+		if not row_name:
+			# Create once
+			parent_doc = frappe.get_doc("RRCL Site Timesheet", timesheet_name)
+			parent_doc.append("table_employees", {
+				"employee": self.employee,
+				"time_in": min_time,
+				"time_out": max_time if min_time != max_time else None
+			})
+			parent_doc.save(ignore_permissions=True)
+
+		else:
+			# Update deterministically
+			frappe.db.set_value(
+				"RRCL Site Timesheet Details",
+				row_name,
+				{
+					"time_in": min_time,
+					"time_out": max_time if min_time != max_time else None
+				}
+			)
+
+
+
+	def get_or_create_parent(self):
+		filters = {"work_site": self.work_site, "date": self.date}
+		name = frappe.db.get_value("RRCL Site Timesheet", filters)
+		if not name:
+			doc = frappe.get_doc({"doctype": "RRCL Site Timesheet", **filters})
+			doc.insert(ignore_permissions=True)
+			return doc.name
+		return name
+
+	

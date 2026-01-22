@@ -10,9 +10,6 @@ from datetime import datetime
 
 
 class RRCLHIKVisionAttendanceUpload(Document):
-    def before_save(self):
-        self.process_csv()
-
     @frappe.whitelist()
     def process_csv(self):
         if not self.attach_mvjs:

@@ -76,8 +76,14 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
- "links": [],
- "modified": "2026-01-22 16:14:20.575283",
+ "links": [
+  {
+   "group": "test",
+   "link_doctype": "RRCL Attendance Record",
+   "link_fieldname": "work_site"
+  }
+ ],
+ "modified": "2026-01-22 19:22:55.824493",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Site Timesheet",
