@@ -8,6 +8,9 @@
   "section_break_vte0",
   "amended_from",
   "date",
+  "column_break_mvla",
+  "summary",
+  "section_break_pvzc",
   "table_employees"
  ],
  "fields": [
@@ -38,6 +41,20 @@
    "fieldname": "table_employees",
    "fieldtype": "Table",
    "options": "RRCL Timesheet Details"
+  },
+  {
+   "fieldname": "column_break_mvla",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_pvzc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "summary",
+   "fieldtype": "Text",
+   "label": "Summary",
+   "max_height": "100px"
   }
  ],
  "grid_page_length": 50,
@@ -49,7 +66,7 @@
    "link_fieldname": "parent_timesheet"
   }
  ],
- "modified": "2026-01-22 01:25:21.942968",
+ "modified": "2026-01-22 02:14:18.523368",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Timesheet",

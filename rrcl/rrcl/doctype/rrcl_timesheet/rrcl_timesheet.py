@@ -14,12 +14,19 @@ class RRCLTimesheet(Document):
 		if duplicate:
 			frappe.throw("A timesheet entry already exists for this date.")
 
+		status_counts = {}
+		for data in self.table_employees:
+			current_status = data.get("status")
+			if current_status:
+				status_counts[current_status] = status_counts.get(current_status, 0) + 1
+		self.summary = "\n".join([f"{status}: {count}" for status, count in status_counts.items()])
+
 	@frappe.whitelist()
 	def generate_present(self):
 		active_employees = frappe.get_all(
 			"RRCL Employee", 
 			filters={"is_active": 1}, 
-			fields=["name"]
+			fields=["name","default_worksite"]
 		)
 
 		summary = {}
@@ -29,9 +36,9 @@ class RRCLTimesheet(Document):
 			summary[emp.name] = {
 				"employee": emp.name,
 				"status": "Not clocked",
-				"work_site": None,
 				"time_in": None,
-				"time_out": None
+				"time_out": None,
+				"work_site": emp.default_worksite
 			}
 
 		attendance_records = frappe.get_all(
@@ -113,13 +120,16 @@ class RRCLTimesheet(Document):
 			
 			for row in self.table_employees:
 				# Logic Note: You might want an 'if row.site == site.name:' filter here
-				site_timesheet.append("table_employees", {
-					"employee": row.employee,
-					"status": row.status,
-					"time_in": row.time_in,
-					"time_out": row.time_out
-				})
-
+				# try:
+					if row.work_site == site.name:
+						site_timesheet.append("table_employees", {
+							"employee": row.employee,
+							"status": row.status,
+							"time_in": row.time_in,
+							"time_out": row.time_out
+						})
+				# except:
+					pass
 			# 4. Save the changes (updates existing or newly inserted doc)
 			site_timesheet.save(ignore_permissions=True)
 		
