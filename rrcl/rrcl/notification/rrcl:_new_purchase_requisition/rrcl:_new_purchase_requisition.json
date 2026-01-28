@@ -2,6 +2,7 @@
  "attach_files": "All",
  "attach_print": 1,
  "channel": "Email",
+ "condition": "doc.workflow_state == \"To Procure\"",
  "condition_type": "Python",
  "creation": "2025-11-25 15:32:27.005002",
  "days_in_advance": 0,
@@ -9,13 +10,13 @@
  "doctype": "Notification",
  "document_type": "RRCL Purchase Requisition",
  "enabled": 1,
- "event": "Submit",
+ "event": "Value Change",
  "idx": 0,
  "is_standard": 1,
  "message": "<p>Add your message here</p>\n\n<p><a href=\"{{frappe.utils.get_url_to_form(doc.doctype, doc.name)}}\">{{doc.name}}</a></p>\n",
  "message_type": "Markdown",
  "minutes_offset": 0,
- "modified": "2025-12-18 11:06:08.836853",
+ "modified": "2026-01-28 16:23:38.827583",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL: New Purchase Requisition",
@@ -27,5 +28,6 @@
  ],
  "send_system_notification": 0,
  "send_to_all_assignees": 0,
- "subject": "RRCL: New PR {{ doc.name }}"
+ "subject": "RRCL: New PR {{ doc.name }}",
+ "value_changed": "workflow_state"
 }

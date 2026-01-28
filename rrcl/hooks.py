@@ -259,11 +259,11 @@ scheduler_events = {
 # ignore_translatable_strings_from = []
 
 fixtures = [
-    {
-        "doctype": "RRCL Work Site", 
-        "filters": [],
-        "overwrite": 1
-    },  # empty filter = export all
+    # {
+    #     "doctype": "RRCL Work Site", 
+    #     "filters": [],
+    #     "overwrite": 1
+    # },  # empty filter = export all
     {
         "doctype" : "Workflow",
         "overwrite": 1,
@@ -296,11 +296,11 @@ fixtures = [
         "filters" : [[ "module", "=",  'rrcl'  ]],
         "overwrite": 1,
     },
-    {
-        "doctype": "RRCL Construction Phase", 
-        "filters": [],
-        "overwrite": 1
-    },
+    # {
+    #     "doctype": "RRCL Construction Phase", 
+    #     "filters": [],
+    #     "overwrite": 1
+    # },
     # { 
     #     "doctype": "Report", 
     #     "filters" : [[ "module", "=",  'rrcl'  ]],
