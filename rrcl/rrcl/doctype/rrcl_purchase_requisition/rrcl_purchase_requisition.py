@@ -6,6 +6,7 @@ from frappe.model.document import Document
 import frappe
 from datetime import datetime
 
+from frappe.utils import today
 
 class RRCLPurchaseRequisition(Document):
 	# begin: auto-generated types
@@ -26,7 +27,9 @@ class RRCLPurchaseRequisition(Document):
 		workflow_state: DF.Data | None
 	# end: auto-generated types
 
-	pass
+	def before_save(self):
+		if self.docstatus == 0:  # Draft
+			self.date = today()
 
 	def before_submit(self):
 		self.validate_allowed_day()

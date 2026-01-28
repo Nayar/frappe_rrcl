@@ -10,9 +10,7 @@
   "item",
   "rate",
   "rate_unit",
-  "multiplier",
-  "productivity",
-  "productivity_unit"
+  "multiplier"
  ],
  "fields": [
   {
@@ -42,29 +40,18 @@
    "label": "Rate Unit"
   },
   {
+   "fetch_from": "item.unit_price",
    "fieldname": "rate",
    "fieldtype": "Float",
    "in_list_view": 1,
    "label": "Rate"
-  },
-  {
-   "fieldname": "productivity",
-   "fieldtype": "Float",
-   "in_list_view": 1,
-   "label": "Productivity"
-  },
-  {
-   "fieldname": "productivity_unit",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Productivity Unit"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-01-12 14:11:43.840997",
+ "modified": "2026-01-24 00:00:15.256547",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Item Assembly Item",

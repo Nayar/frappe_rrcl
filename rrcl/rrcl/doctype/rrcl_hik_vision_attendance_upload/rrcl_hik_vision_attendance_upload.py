@@ -8,6 +8,9 @@ import frappe
 from frappe.utils.file_manager import get_file_path
 from datetime import datetime
 
+# truncate `tabRRCL Attendance Record`;
+# trancate `tabRRCL Site Timesheet`;
+# trancate `tabRRCL Site Timesheet Details`;
 
 class RRCLHIKVisionAttendanceUpload(Document):
     @frappe.whitelist()
@@ -89,6 +92,8 @@ class RRCLHIKVisionAttendanceUpload(Document):
                     else:
                         frappe.msgprint("Record already exists, skipping...")
                     count += 1
+                    if(count % 1000):
+                        frappe.db.commit()
 
                 except Exception as e:
                     # Log error in Frappe Error Log instead of printing to console

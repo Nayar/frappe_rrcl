@@ -28,6 +28,7 @@
   {
    "fieldname": "name1",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Name"
   },
   {
@@ -38,17 +39,20 @@
   {
    "fieldname": "unit_price",
    "fieldtype": "Currency",
+   "in_list_view": 1,
    "label": "Variable Cost",
    "read_only": 1
   },
   {
    "fieldname": "uom",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "UOM"
   },
   {
    "fieldname": "fixed_cost",
    "fieldtype": "Currency",
+   "in_list_view": 1,
    "label": "Fixed Cost",
    "read_only": 1
   },
@@ -75,6 +79,7 @@
   {
    "fieldname": "estimated_duration",
    "fieldtype": "Float",
+   "in_list_view": 1,
    "label": "Estimated Duration"
   },
   {
@@ -121,7 +126,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-12 14:44:56.932903",
+ "modified": "2026-01-24 00:15:35.154014",
  "modified_by": "Administrator",
  "module": "RRCL",
  "name": "RRCL Item Assembly",
